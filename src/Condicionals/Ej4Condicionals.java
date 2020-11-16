@@ -1,7 +1,7 @@
 package Condicionals;
 
 import java.util.Scanner;
-public class ex4Condicionals {
+public class Ej4Condicionals {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
