@@ -1,6 +1,8 @@
+package Bucles;
+
 import java.util.Scanner;
 
-public class Ex9 {
+public class ex9bucles {
         public static void main(String[] args) {
 
 
