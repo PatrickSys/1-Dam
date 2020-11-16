@@ -7,6 +7,7 @@ public class exc12 {
         int vegades=scanner.nextInt();
         int x=0;
         int x1=1;
+        System.out.println("introdueix el la quantitat de dígits que vols conéixer");
         for (int i = 2; i<vegades; i++){
             int x2=x+x1;
             x=x1;
