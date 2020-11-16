@@ -1,6 +1,6 @@
 package Condicionals;
 
-public class ex5Condicionals {
+public class Ej5Condicionals {
     public static double  equacio(double a, double b) {
         double x=((-b)/a);
         return x;
