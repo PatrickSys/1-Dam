@@ -1,7 +1,7 @@
 package Bucles;
 
 import java.util.Scanner;
-public class exc12bucles {
+public class Ej12Bucles {
 
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);

@@ -1,21 +1,22 @@
 package POO;
 
 
-    //classe i cream atributs
+    //classe-plataforma i cream atributs
 public class PilotDeFormula1 {
-    private String nombre;
-    private String habilidad;
-    private String vehiculo;
-    private int edad;
+    String nombre;
+    String habilidad;
+    String vehiculo;
+    int edad;
 
 
-    //metode constructor per assignar valors als atributs de l'objecte
+    //metode constructor(dóna estat inicial a l'objecte) per assignar valors als atributs de la classe-plataforma
     public PilotDeFormula1(String nombre, String habilidad, String vehiculo, int edad) {
         this.nombre = nombre;
         this.habilidad = habilidad;
         this.vehiculo = vehiculo;
         this.edad = edad;
     }
+
 
         public String getNombre() {
             return nombre;

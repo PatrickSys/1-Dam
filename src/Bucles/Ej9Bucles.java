@@ -2,7 +2,7 @@ package Bucles;
 
 import java.util.Scanner;
 
-public class ex9bucles {
+public class Ej9Bucles {
         public static void main(String[] args) {
 
 
