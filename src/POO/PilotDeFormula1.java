@@ -10,11 +10,11 @@ public class PilotDeFormula1 {
 
 
     //metode constructor(dóna estat inicial a l'objecte) per assignar valors als atributs de la classe-plataforma
-    public PilotDeFormula1(String nombre, String habilidad, String vehiculo, int edad) {
+    public PilotDeFormula1(String nombre, String habilidad, String vehiculo, int edad) { //assignam paràmetres a atributs
         this.nombre = nombre;
         this.habilidad = habilidad;
         this.vehiculo = vehiculo;
-        this.edad = edad;
+        setEdad(edad);  //es lo mateix
     }
 
 

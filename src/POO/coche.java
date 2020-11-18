@@ -1,6 +1,7 @@
 package POO;
 
 
+import org.w3c.dom.ls.LSOutput;
 
 //exemple pseudocode
 //classe-plataforma i cream atributs
@@ -19,8 +20,9 @@ public class coche
 
     private String vehiculo;
 
-    String color;
-
+    private String color;
+    private String elnom;
+    int v;
     int peso_total;
 
     boolean asientos_cuero, climatizador;
@@ -37,6 +39,14 @@ public class coche
 
 
     }
+    //constructor amb parametres
+    public coche(String elnom, int v){
+        setElnom(elnom);
+        this.v=v;
+
+    }
+
+
     //cream getter per obtendre atributs des de fora
 
     /* si volem string amb valor:
@@ -58,9 +68,11 @@ public class coche
         return ancho;
     }
 
-    public int getMotor() {
-        return motor;
-    }
+    public int getMotor() {return motor;}
+
+    public String getElnom() {return elnom;}
+
+    public int getV() {return v;}
 
     public int getPeso_plataforma() {
         return peso_plataforma;
@@ -76,5 +88,9 @@ public class coche
 
     public String getColor() {
         return color;
+    }
+
+    public void setElnom(String elnom) {
+        this.elnom = elnom;
     }
 }

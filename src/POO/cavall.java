@@ -3,9 +3,13 @@ package POO;
 public class cavall {
 
     //definim atributs de classe cavall
-    String raça;
+    String rasa;
     String nom;
     int edad;
+
+
+
+
 
     //mètodes de cavall
     private void salta(){
