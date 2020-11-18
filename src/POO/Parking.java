@@ -12,20 +12,18 @@ public class Parking {
     static int MaxCharge = 10;  //Max charge for every client
     static double TimeParked;
     static double charge;
-    static int counter;
     static double totalamount;
     public static String customer;
 
 
     static double charge() { //mètode per calcular el càrreg del client
         System.out.print("How many customers did we have yesterday?     ");
-        int customers = scanner.nextInt();
+        int customers = Integer.parseInt(scanner.nextLine()); //Integer.parseInt(scan.nextLine()) evitam conflicte amb proxim nextLine
 
         for (int i = 0; i < customers; i++) { //bucle for que executarà el nº de customers que hi va haver ahir
             System.out.print("What's the name for this customer?    ");
             customer = scanner.nextLine();
-            customer = scanner.nextLine();
-            System.out.print("How many hours did " + customer + " park?   ");
+            System.out.print("How many hours did " + customer + " park (in hours)?   ");
             TimeParked = scanner.nextDouble();
             if (TimeParked > 0 && TimeParked <= OrdinaryTime) { //dóna valor 2 a charge si no hem passat de 3h
                 charge = MinTax;
@@ -36,7 +34,7 @@ public class Parking {
 
                 charge = MinTax;
 
-                for (counter = 3; counter < TimeParked; counter++) { //Fins que comptador arribi al temps aparcat, sumam 0.5 per cada hora
+                for (int counter = 3; counter < TimeParked; counter++) { //Fins que comptador arribi al temps aparcat, sumam 0.5 per cada hora
                     charge += 0.5;
                     setCharge(charge);
                     if (charge>=MaxCharge){ //us MaxCharge o 24 directament?
@@ -46,7 +44,7 @@ public class Parking {
 
             }
             totalamount += charge; //actualitza totalamount
-            System.out.println(customer + " charge is : " + charge + " $");
+            System.out.println(customer + "'s charge is : " + charge + " $");
 
         }
 
