@@ -10,9 +10,12 @@ public class coche1 {
     public static void main(String[] args) {
     coche micoche= new coche();
 
-    micoche.setColor("azul");
+    micoche.setColor("azul"); //passam parametre a set
         System.out.println(micoche.getColor());
 
+    coche micoche1= new coche("ruinolt", 90);  //assignam valors a instància micoche1 i feim get valors
+        System.out.println(micoche1.getV());
+        System.out.println(micoche1.getElnom());
 
 
     }
