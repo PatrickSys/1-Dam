@@ -74,18 +74,26 @@ public class operatingSystem { //OS class with attributes, also array of softwar
     }
 
     //method to install Software
-    public boolean installsoftware(Software s, Computer e) {
-        for (int i = 0; i < osSoftware.length; i++) {  //for loop to start giving array's positions to new softwares, updates Available Disk and RAM
-            if (osSoftware[i] == null) {
-                osSoftware[i] = s;
-                e.setAvailableDisk(((e.getAvailableDisk() - s.getSoftwareSpaceRequirement())));
-                e.setAvailableRAM((e.getAvailableRAM()) - (s.getSoftwareMemoryRequirement()));
-                return true;
-            }
-        }
-        return false;
+
+    int i=0;
+    public void installsoftware(Computer e, Software s, operatingSystem o) {
+
+                if ((s.getSoftwareSpaceRequirement() <= e.getAvailableDisk()) && (s.getSoftwareMemoryRequirement() <= e.getAvailableRAM()) && (osSoftware[i] == null) && (i<osSoftware.length)) {
+                    osSoftware[i]=s;
+                    e.setAvailableDisk(e.getAvailableDisk() - s.getSoftwareSpaceRequirement());
+                    e.setAvailableRAM(e.getAvailableRAM() - s.getSoftwareMemoryRequirement());
+                    System.out.print(s.getSoftwareName() + " was succesfully installed on " + e.getName() + ", ");
+                    System.out.println(e.getAvailableDisk() + " GB of HDD and " +e.getAvailableRAM() + " GB of RAM free after installation ");
+
+                }else{
+                    System.out.println(s.getSoftwareName()+ " could not be installed");
+                }
+                i++;
     }
-    public void showInstalledSoft(operatingSystem o, Computer c){
+
+
+    public void showinstalledsoft(operatingSystem o, Computer c){
+
         System.out.print("Installed software right now is: " );
         for (int i = 0; i<osSoftware.length; i++){
             if(osSoftware[i] !=null){
@@ -101,6 +109,8 @@ public class operatingSystem { //OS class with attributes, also array of softwar
 
         c.setAvailableDisk((c.getAvailableDisk() + b.getSoftwareSpaceRequirement()));
         c.setAvailableRAM((c.getAvailableRAM()) + b.getSoftwareMemoryRequirement());
+        System.out.print( "\n" + b.getSoftwareName() + "  was succesfully uninstalled, ");
+        System.out.println(c.getAvailableDisk() + " GB of HDD" + " and " +  c.getAvailableRAM() + " GB of RAM free after uninstalling");
     }
 
 
