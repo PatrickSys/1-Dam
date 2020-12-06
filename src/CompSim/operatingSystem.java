@@ -76,7 +76,7 @@ public class operatingSystem { //OS class with attributes, also array of softwar
     //method to install Software
 
     int i=0;
-    public void installsoftware(Computer e, Software s, operatingSystem o) {
+    public void installsoftware(Computer e, Software s, operatingSystem o) {  // installsoft method which installs if there's room enough and then updates available ram and hdd
 
                 if ( (s.getSoftwareSpaceRequirement() <= e.getAvailableDisk()) && (s.getSoftwareMemoryRequirement() <= e.getAvailableRAM()) && (osSoftware[i] == null) ) {
                     osSoftware[i]=s;
@@ -92,7 +92,7 @@ public class operatingSystem { //OS class with attributes, also array of softwar
     }
 
 
-    public void showinstalledsoft(operatingSystem o, Computer c){
+    public void showinstalledsoft(operatingSystem o, Computer c){ //for loop to print installed software array
 
         System.out.print("Installed software right now is: " );
         for (int i = 0; i<osSoftware.length; i++){
@@ -105,7 +105,7 @@ public class operatingSystem { //OS class with attributes, also array of softwar
 
     }
 
-    public void uninstallSoftware(Software b, Computer c) {
+    public void uninstallSoftware(Software b, Computer c) { //method to uninstall any software, updates ram and hdd
 
         c.setAvailableDisk((c.getAvailableDisk() + b.getSoftwareSpaceRequirement()));
         c.setAvailableRAM((c.getAvailableRAM()) + b.getSoftwareMemoryRequirement());

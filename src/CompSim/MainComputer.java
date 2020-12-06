@@ -35,7 +35,7 @@ public class MainComputer {
                 computer1.format();
 
            }
-           else{
+           else{ //print error if there's no space to install any SO then doesn't install any software
                System.out.println("Error installing " + windows.getOsName() + ", no storage available!!");
            }
 

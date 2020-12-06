@@ -64,7 +64,7 @@ public class Computer {
         this.availableRAM = availableRAM;
     }
 
-    public boolean installos(operatingSystem OperatingSystem  ){    //Method to Install OS
+    public boolean installos(operatingSystem OperatingSystem  ){    //Method to Install OS, updates storage
         if ((OperatingSystem.getOsSpaceRequirement() <= availableDisk) && (OperatingSystem.getOsRamMemoryRequirement() <=availableRAM)) { //Checks if there's storage free
             this.operatingsystem = OperatingSystem;     //Sets OS name
             setAvailableDisk((getAvailableDisk()) - OperatingSystem.getOsSpaceRequirement());    //Update computer1 disk free space
@@ -78,7 +78,7 @@ public class Computer {
         return false;
     }
 
-    public  void format() {
+    public  void format() { //sets available storage to computer's specs
         setAvailableDisk(getHardDisk());
         setAvailableRAM(getRamMemory());
         System.out.print(getName() + " was succesfully formated, available storage and RAM updated to: ");
