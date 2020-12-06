@@ -78,7 +78,7 @@ public class operatingSystem { //OS class with attributes, also array of softwar
     int i=0;
     public void installsoftware(Computer e, Software s, operatingSystem o) {
 
-                if ((s.getSoftwareSpaceRequirement() <= e.getAvailableDisk()) && (s.getSoftwareMemoryRequirement() <= e.getAvailableRAM()) && (osSoftware[i] == null) && (i<osSoftware.length)) {
+                if ( (s.getSoftwareSpaceRequirement() <= e.getAvailableDisk()) && (s.getSoftwareMemoryRequirement() <= e.getAvailableRAM()) && (osSoftware[i] == null) ) {
                     osSoftware[i]=s;
                     e.setAvailableDisk(e.getAvailableDisk() - s.getSoftwareSpaceRequirement());
                     e.setAvailableRAM(e.getAvailableRAM() - s.getSoftwareMemoryRequirement());

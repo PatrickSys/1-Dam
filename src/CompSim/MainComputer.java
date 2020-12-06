@@ -14,6 +14,7 @@ public class MainComputer {
         Software chrome = new Software("Chrome", "8.4", 1, 0.5); //Instance about Chrome
         Software minecraft = new Software("Minecraft", "Premium", 2, 1); //Instance of Minecraft
 
+
         //InstallOS and only does following as installing software if OS gets set up
         if (computer1.installos(windows)) {
 
@@ -22,6 +23,7 @@ public class MainComputer {
 
             //Install Minecraft if there's room enough
               windows.installsoftware(computer1, minecraft, windows);
+
 
             //Show a list of installed software right now
               windows.showinstalledsoft(windows, computer1);
