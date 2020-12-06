@@ -1,37 +1,24 @@
 package CompSim;
 
-/*
-Parent class
-
-
- */
-
-
 
 public class Computer {
 
-    public static void main(String[] args) {
 
-        Computer.computer1.setOperatingSystem(operatingSystem.Windows); //We install Windows on computer1
-        System.out.println("Installed OS on computer1 is " + Computer.computer1.OperatingSystem.getOsName() + " " +Computer.computer1.OperatingSystem.getOsVersion()); //Check Installed OS
-        computer1.setHardDisk((computer1.hardDisk) -  operatingSystem.Windows.getOsSpaceRequirement());    //Update computer1 disk free space
-        System.out.println(computer1.hardDisk+ " GB of HDD free after installation");
-        computer1.setRamMemory((computer1.ramMemory)- operatingSystem.Windows.getOsRamMemoryRequirement());  // and RAM
-        System.out.println((int)computer1.ramMemory+ " GB of RAM free after installation");
-
-
-
-    }
 
     private String name;                                                //computer class attributes
     private double ramMemory;
+    private double availableRAM;
     private int hardDisk;
-    public operatingSystem OperatingSystem;
+    private operatingSystem operatingsystem;
+    private double availableDisk;
+
 
     public Computer(String name, int ramMemory, int hardDisk) {     //constructor
         this.name = name;
         this.ramMemory = ramMemory;
         this.hardDisk = hardDisk;
+        setAvailableDisk(hardDisk);
+        setAvailableRAM(ramMemory);
     }
 
     public String getName() {                       //setters and getters
@@ -58,16 +45,45 @@ public class Computer {
         this.hardDisk = hardDisk;
     }
 
-    public void setOperatingSystem(operatingSystem OperatingSystem  ){
-        this.OperatingSystem= OperatingSystem;
+    public double getAvailableDisk() {
+        return availableDisk;
+    }
+
+    public void setAvailableDisk(double availableDisk) {
+        this.availableDisk = availableDisk;
     }
     public operatingSystem getOperatingSystem(){
-        return OperatingSystem;
+        return operatingsystem;
     }
 
+    public double getAvailableRAM() {
+        return availableRAM;
+    }
 
-    static Computer computer1= new Computer("computer 1", 4, 512);   //computer1 without an OS installed
+    public void setAvailableRAM(double availableRAM) {
+        this.availableRAM = availableRAM;
+    }
+
+    public boolean installOS(operatingSystem OperatingSystem  ){    //Method to Install OS
+        if ((OperatingSystem.getOsSpaceRequirement() < availableDisk) && (OperatingSystem.getOsRamMemoryRequirement() <availableRAM)) { //Checks if there's storage free
+            this.operatingsystem = OperatingSystem;     //Sets OS name
+            setAvailableDisk((getAvailableDisk()) - OperatingSystem.getOsSpaceRequirement());    //Update computer1 disk free space
+            setAvailableRAM((getRamMemory()) - OperatingSystem.getOsRamMemoryRequirement());  // and RAM
 
 
+        return true;
+        }
+
+        return false;
+    }
+
+    public static void format(Computer a) {
+        a.setAvailableDisk(a.getHardDisk());
+        a.setAvailableRAM(a.getRamMemory());
+
+    }
 
 }
+
+
+

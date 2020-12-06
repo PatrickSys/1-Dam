@@ -1,6 +1,5 @@
 package CompSim;
 
-
 public class operatingSystem { //OS class with attributes, also array of software
 
     private String osName;
@@ -9,17 +8,9 @@ public class operatingSystem { //OS class with attributes, also array of softwar
     private boolean osOnlyCommand;
     private int osSpaceRequirement;
     private double osRamMemoryRequirement;
-    private operatingSystem[] osSoftware;   //we create an object array of osSoftware to enter there the software we install
-    private String installedOS;
-
-    static void installOS( operatingSystem e ) {   //method to install an OS
-
-    }
+    private Software[] osSoftware = new Software[3];
 
 
-
-    static operatingSystem Windows = new operatingSystem("Windows", "Seven", "x64", false, 15, 2);  //OS instance about Windows
-    static operatingSystem Ubuntu= new operatingSystem("Ubuntu", "Server 20.04", "x86",true, 10, 1  );
     public operatingSystem(String osName, String osVersion, String osArchitecture, boolean osOnlyCommand, int osSpaceRequirement, double osRamMemoryRequirement) {
         this.osName = osName;
         this.osVersion = osVersion;
@@ -27,7 +18,7 @@ public class operatingSystem { //OS class with attributes, also array of softwar
         this.osOnlyCommand = osOnlyCommand;
         this.osSpaceRequirement = osSpaceRequirement;
         this.osRamMemoryRequirement = osRamMemoryRequirement;
-        this.osSoftware = null;
+
     }
 
     public String getOsName() {
@@ -75,15 +66,45 @@ public class operatingSystem { //OS class with attributes, also array of softwar
     }
 
     public void setOsRamMemoryRequirement(int osRamMemoryRequirement) {
-        this.osRamMemoryRequirement = osRamMemoryRequirement; }
+        this.osRamMemoryRequirement = osRamMemoryRequirement;
+    }
 
-    public operatingSystem[] getOsSoftware() {
+    public Software[] getOsSoftware() {
         return osSoftware;
     }
 
-    public void setOsSoftware(operatingSystem[] osSoftware) {
-        this.osSoftware = osSoftware;
+    //method to install Software
+    public boolean installsoftware(Software s, Computer e) {
+        for (int i = 0; i < osSoftware.length; i++) {  //for loop to start giving array's positions to new softwares, updates Available Disk and RAM
+            if (osSoftware[i] == null) {
+                osSoftware[i] = s;
+                e.setAvailableDisk(((e.getAvailableDisk() - s.getSoftwareSpaceRequirement())));
+                e.setAvailableRAM((e.getAvailableRAM()) - (s.getSoftwareMemoryRequirement()));
+                return true;
+            }
+        }
+        return false;
+    }
+    public void showInstalledSoft(operatingSystem o, Computer c){
+        System.out.print("Installed software right now is: " );
+        for (int i = 0; i<osSoftware.length; i++){
+            if(osSoftware[i] !=null){
+                System.out.print(osSoftware[i].getSoftwareName() + ", ");
+            }
+
+        }
+
+
+    }
+
+    public void uninstallSoftware(Software b, Computer c) {
+
+        c.setAvailableDisk((c.getAvailableDisk() + b.getSoftwareSpaceRequirement()));
+        c.setAvailableRAM((c.getAvailableRAM()) + b.getSoftwareMemoryRequirement());
     }
 
 
 }
+
+
+

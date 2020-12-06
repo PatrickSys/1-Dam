@@ -4,17 +4,18 @@ public class Software {
 
     private String softwareName;
     private String softwareVersion;
-    private int softwareSpaceRequirement;
-    private int softwareMemoryRequirement;
+    private double softwareSpaceRequirement;
+    private double softwareMemoryRequirement;
 
-    public Software(String softwareName, String softwareVersion, int softwareMemoryRequirement, int softwareSpaceRequirement){  //constructor of software
+
+    public Software(String softwareName, String softwareVersion, double softwareMemoryRequirement, double softwareSpaceRequirement){  //constructor of software
         this.softwareName=softwareName;
         this.softwareVersion=softwareVersion;
         this.softwareSpaceRequirement=softwareSpaceRequirement;
         this.softwareMemoryRequirement=softwareMemoryRequirement;
     }
 
-    //getters and setters
+
 
 
     public String getSoftwareName() {
@@ -33,15 +34,15 @@ public class Software {
         this.softwareVersion = softwareVersion;
     }
 
-    public int getSoftwareSpaceRequirement() {
+    public double getSoftwareSpaceRequirement() {
         return softwareSpaceRequirement;
     }
 
-    public void setSoftwareSpaceRequirement(int softwareSpaceRequirement) {
+    public void setSoftwareSpaceRequirement(double softwareSpaceRequirement) {
         this.softwareSpaceRequirement = softwareSpaceRequirement;
     }
 
-    public int getSoftwareMemoryRequirement() {
+    public double getSoftwareMemoryRequirement() {
         return softwareMemoryRequirement;
     }
 
