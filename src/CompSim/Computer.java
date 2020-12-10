@@ -81,7 +81,7 @@ public class Computer {
     public  void format() { //sets available storage to computer's specs
         setAvailableDisk(getHardDisk());
         setAvailableRAM(getRamMemory());
-        System.out.print(getName() + " was succesfully formated, available storage and RAM updated to: ");
+        System.out.println("\n"+ getName() +  " was succesfully formated, available storage and RAM updated to: ");
         System.out.println(getAvailableDisk() + " GB of HDD and " + getAvailableRAM() + " GB of RAM ");
 
     }

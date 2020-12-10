@@ -19,24 +19,27 @@ public class MainComputer {
         if (computer1.installos(windows)) {
 
             //Install Chrome if there's room enough
-              windows.installsoftware(computer1, chrome, windows);
+            windows.installsoftware(computer1, chrome, windows);
 
             //Install Minecraft if there's room enough
-              windows.installsoftware(computer1, minecraft, windows);
+            windows.installsoftware(computer1, minecraft, windows);
 
 
             //Show a list of installed software right now
-              windows.showinstalledsoft(windows, computer1);
+            windows.showinstalledsoft(windows, computer1);
 
-             //Uninstall Chrome
-               windows.uninstallSoftware(chrome, computer1);
+            //Uninstall Chrome
+            windows.uninstallSoftware(chrome, computer1);
 
-              //format Computer1
-                computer1.format();
+            //Show a list of installed software after uninstalling Chrome
+            windows.showinstalledsoft(windows, computer1);
 
-           }
-           else{ //print error if there's no space to install any SO then doesn't install any software
-               System.out.println("Error installing " + windows.getOsName() + ", no storage available!!");
+            //format Computer1
+            computer1.format();
+
+        }
+        else{ //print error if there's no space to install any SO then doesn't install any software
+            System.out.println("Error installing " + windows.getOsName() + ", no storage available!!");
            }
 
 
