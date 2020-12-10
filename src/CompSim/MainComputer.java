@@ -19,20 +19,27 @@ public class MainComputer {
         if (computer1.installos(windows)) {
 
             //Install Chrome if there's room enough
-            windows.installsoftware(computer1, chrome, windows);
+            if(windows.installsoftware(computer1, chrome)) {
+            }else{
+                System.out.println(chrome.getSoftwareName()+ "couldn't be installed on " +computer1.getName());
+            }
+
 
             //Install Minecraft if there's room enough
-            windows.installsoftware(computer1, minecraft, windows);
+            if(windows.installsoftware(computer1, minecraft)) {
+                }else{
+                    System.out.println(minecraft.getSoftwareName()+ "couldn't be installed on " +computer1.getName());
+                }
 
 
             //Show a list of installed software right now
-            windows.showinstalledsoft(windows, computer1);
+            windows.showinstalledsoft();
 
             //Uninstall Chrome
             windows.uninstallSoftware(chrome, computer1);
 
             //Show a list of installed software after uninstalling Chrome
-            windows.showinstalledsoft(windows, computer1);
+            windows.showinstalledsoft();
 
             //format Computer1
             computer1.format();

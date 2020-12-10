@@ -21,7 +21,7 @@ public class operatingSystem { //OS class with attributes, also array of softwar
 
     }
 
-    public String getOsName() {
+  public String getOsName() {
         return osName;
     }
 
@@ -75,21 +75,22 @@ public class operatingSystem { //OS class with attributes, also array of softwar
 
     //method to install Software
 
-    int i=0;
-    public void installsoftware(Computer e, Software s, operatingSystem o) {  // installsoft method which installs if there's room enough and then updates available ram and hdd
 
-                if ( (s.getSoftwareSpaceRequirement() <= e.getAvailableDisk()) && (s.getSoftwareMemoryRequirement() <= e.getAvailableRAM()) && (osSoftware[i] == null) ) {
-                    osSoftware[i]=s;
+    public boolean installsoftware(Computer e, Software s) {  // installsoft method which installs if there's room enough and then updates available ram and hdd
+        if ((s.getSoftwareSpaceRequirement() <= e.getAvailableDisk()) && (s.getSoftwareMemoryRequirement() <= e.getAvailableRAM())) {
+            for (int i = 0; i < osSoftware.length; i++) {
+                if (osSoftware[i] == null) {
+                    osSoftware[i] = s;
                     e.setAvailableDisk(e.getAvailableDisk() - s.getSoftwareSpaceRequirement());
                     e.setAvailableRAM(e.getAvailableRAM() - s.getSoftwareMemoryRequirement());
                     System.out.print(s.getSoftwareName() + " was succesfully installed on " + e.getName() + ", ");
-                    System.out.println(e.getAvailableDisk() + " GB of HDD and " +e.getAvailableRAM() + " GB of RAM free after installation ");
-
-                }else{
-                    System.out.println(s.getSoftwareName()+ " could not be installed");
+                    System.out.println(e.getAvailableDisk() + " GB of HDD and " + e.getAvailableRAM() + " GB of RAM free after installation ");
+                    return true;
                 }
-                i++;
+            }
+        }return false;
     }
+
     public void uninstallSoftware(Software b, Computer c) { //method to uninstall any software, updates ram and hdd
 
         c.setAvailableDisk((c.getAvailableDisk() + b.getSoftwareSpaceRequirement()));
@@ -108,7 +109,7 @@ public class operatingSystem { //OS class with attributes, also array of softwar
     }
 
 
-    public void showinstalledsoft(operatingSystem o, Computer c){ //for loop to print installed software array
+    public void showinstalledsoft(){ //for loop to print installed software array
 
         System.out.print("Installed software right now is: " );
         for (Software software : osSoftware) {
