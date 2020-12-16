@@ -26,8 +26,10 @@ public class MainComputer {
 
 
             //Install Minecraft if there's room enough
-            if(windows.installsoftware(computer1, minecraft)) {
-                }else{
+            if(windows.installsoftware(computer1, minecraft)){
+
+            }
+            else{
                     System.out.println(minecraft.getSoftwareName()+ "couldn't be installed on " +computer1.getName());
                 }
 

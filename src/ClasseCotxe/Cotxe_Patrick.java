@@ -18,7 +18,7 @@ public class Cotxe_Patrick extends CotxeAbstracte implements InterfaceCotxe {
         public void arrancarMotor() throws Exception {
             if (this.comprovarmotor()==EstatMotorCotxe.Aturat){
                 this.estatcotxe = EstatMotorCotxe.Arrancat;
-            }else throw new Exception("El coche ya esta en marcha");
+            }else throw new Exception("El coche ja està en marxa!");
         }
 
         @Override
@@ -37,6 +37,6 @@ public class Cotxe_Patrick extends CotxeAbstracte implements InterfaceCotxe {
         public void aturarMotor() throws Exception {
             if (comprovarmotor()==EstatMotorCotxe.Arrancat){
                 estatcotxe = EstatMotorCotxe.Aturat;
-            }else throw new Exception("El coche ya esta parado");
+            }else throw new Exception("El cotxe ja està aturat!");
         }
 }
