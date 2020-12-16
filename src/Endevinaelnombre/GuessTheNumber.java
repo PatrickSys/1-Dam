@@ -3,6 +3,7 @@ package Endevinaelnombre;
 import java.util.Scanner;
 
 public class GuessTheNumber {
+    int balance = 20;
 
 
     public  void Guess() {
@@ -12,7 +13,6 @@ public class GuessTheNumber {
         int tries = 1; //tries counter
         int number = (int) (Math.random() * 100);
         int[] numtried = new int[5]; //gives 5 tries
-        int balance = 20;
         int i = 0;
 
         System.out.println("Let's guess a number between 0 and 99");
@@ -37,7 +37,7 @@ public class GuessTheNumber {
                 balance -= 5;
                 System.out.println("You win 5€!");
                 System.out.println("Machine's balance is: " + balance + " €");
-                correct = true;
+                correct = false;
 
             }
             else if (tries >= 5) {  //if no tries left
