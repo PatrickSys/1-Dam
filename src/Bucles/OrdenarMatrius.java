@@ -21,6 +21,7 @@ public class OrdenarMatrius {
 
         }
 
+
        /* for(int i=0; i<matriu.length; i++){
             System.out.println(matriu[i]);
         }*/

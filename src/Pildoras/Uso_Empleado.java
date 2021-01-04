@@ -12,7 +12,7 @@ public class Uso_Empleado {
 
         sueldo=sue;
 
-        GregorianCalendar calendario= new GregorianCalendar(agno, mes-1, dia);
+        GregorianCalendar calendario= new GregorianCalendar(agno,mes, dia);
 
         altaContrato=calendario.getTime();
 
@@ -22,6 +22,12 @@ public class Uso_Empleado {
 
 
         }
+
+        public static String getNextId(){
+
+            return "El ID siguiente es: " + IdSiguiente;
+        }
+
 
         public String getNombreId(){
             return "Nombre: " +nombre+ " Id: " +Id;
@@ -44,7 +50,7 @@ public class Uso_Empleado {
         private String nombre;
         private double sueldo;
         private Date altaContrato;
-        private int Id=1;
+        private int Id;
         private static int IdSiguiente=1;
 
     }

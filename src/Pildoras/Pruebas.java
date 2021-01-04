@@ -32,5 +32,6 @@ public class Pruebas {
 
         }
 
+        System.out.println(Empleado.getNextId());
     }
 }
