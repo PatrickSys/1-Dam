@@ -7,25 +7,26 @@ public class OrdenarMatrius {
     public static void main(String[] args) {
         int[] matriu = {29, 25, 39, 20}; //array per a ordenar
 
-        for (int i = 1; i < matriu.length; i++ ){ //que ha de fer per ordenar-los
-            int n=0;
-            if (matriu[i]<matriu[i-1]){ // si 25 es menor a 29
-                int a=matriu[i];  //assigna a a 25
-                System.out.println(a);
-               // matriu[i]=matriu[n];    //assigna 25 a 20
-               // matriu[i]=a;
+        int a;
+        for (int i = 0; i < matriu.length; i++ ) {//va passant el primer num, agafa 29
+
+
+            for (int j = 0; j < matriu.length; j++) { //i el compara amb tots es altres
+
+                if(matriu[i]<matriu[j]){ // si es primer num es mes petit que es altres els canvia
+                    a=matriu[i]; //assigna a "a" 29
+                    matriu[i]=matriu[j]; //assigna el nombre mes petit a la posició on troba el nombre més gran
+                    matriu[j]=a; //i assigna el numero mes gran a la posició on troba el numero mes petit
+
+                }
+
             }
 
-
-            n++;
-
         }
-
-
-       /* for(int i=0; i<matriu.length; i++){
-            System.out.println(matriu[i]);
-        }*/
-
-
+        for (int i=0; i<matriu.length; i++)
+        System.out.println(matriu[i]);
     }
+
+
+
 }
