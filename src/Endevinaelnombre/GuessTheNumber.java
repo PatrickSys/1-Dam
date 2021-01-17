@@ -1,13 +1,13 @@
 package Endevinaelnombre;
 
+
 import java.util.Scanner;
+
 
 public class GuessTheNumber {
     int balance = 20;
 
-
     public void Guess() {
-
         Scanner sc = new Scanner(System.in);
         boolean correct = false;  //boolean variable in case the number is guessed
         int tries = 1; //tries counter
@@ -51,84 +51,35 @@ public class GuessTheNumber {
 
                 System.out.println("Machine's balance is " + balance + " €");
 
-
                 System.out.println("You can have one more try!");
                 System.out.println("1.Pay 1€ for one more try");
                 System.out.println("2.Loose your opportunity to be a winner");
                 int choose=sc.nextInt();
 
-                switch(choose){
-                    case 1:
+                switch (choose) {
+                    case 1 -> {
                         System.out.println("Try again!!");
-                        balance+=1;
-                        break;
-
-
-                    case 2:
+                        balance += 1;
+                    }
+                    case 2 -> {
                         System.out.println("Looser!");
-                        correct=true;
-
+                        correct = true;
+                    }
                 }
-
-
             }
             else { //while neither number is guessed nor tries left
                 System.out.println("Your try counter is " + tries + " tries");
-
                 if (in < number) {
                     System.out.println("Try a higher number!!");
 
                 }
                 if (in > number) {
-                    System.out.println("Try a lowe number!!");
-
+                    System.out.println("Try a lower number!!");
                 }
-
+                System.out.println(number + " this");
             }
-
-
-
 
             tries++;
         } while (!correct); //exits the loop when either exceeds number of tries or number is guessed
-
-
     }
-
 }
-
-/*
-    public void menu() {
-
-        Scanner scanner = new Scanner(System.in);
-        boolean exit=false;
-
-
-        System.out.println("'Let's guess a number' Menu");
-        System.out.println("1. Try one more time for 1€");
-        System.out.println("2. Exit the game");
-        int choose = scanner.nextInt();
-
-        while (!exit) {
-            switch (choose) {
-
-                case 1:
-                    System.out.println("Try one more time!");
-                    int newtry=scanner.nextInt();
-
-                    if(newtry==number){
-
-                    }
-
-                    Guess();
-
-                case 2:
-                exit=true;
-
-            }
-
-        }
-
-    }*/
-
-
