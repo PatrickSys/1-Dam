@@ -12,6 +12,9 @@ public class Cinema {
 
     }
 
+    public double getTicketPrice() {
+        return TicketPrice;
+    }
 
     public boolean getIsfull() {
         return isfull;

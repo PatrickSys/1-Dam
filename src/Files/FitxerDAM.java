@@ -3,42 +3,55 @@ import java.io.*;
 
 public class FitxerDAM {    //nom=path
 
-   enum mode {lectura, escriptura} //modes
+   public enum mode {lectura, escriptura} //modes
 
     private String nom;
-
-
+   // Segona possibilitat
+    File accesFitxer;
+    FileWriter fw;
+    FileReader fr;
 
     public FitxerDAM(){
 
     }
 
-    public void fitxer(String path, mode mode) throws IOException {
-
+    public void fitxer(String path/*, mode mode*/) throws IOException {
+/*
+        mode=mode;
         if (mode == mode.escriptura) {
 
-        FileWriter fw= new FileWriter(path);
+        this.fw= new FileWriter(path);
+        this.accesFitxer=new File(path);
 
         }
         else if(mode==mode.lectura){
-            FileReader fr=new FileReader(path);
-        }
+            this.fr=new FileReader(path);}*/
+            this.accesFitxer=new File(path);
+
     }
 
 
     public boolean escriure(String text) throws IOException {
     boolean escrit=false;
-    FitxerDAM arxiu= new FitxerDAM();
-    arxiu.fitxer("\\home", mode.escriptura);
 
-    if(text!=null){
 
+        BufferedWriter bw=new BufferedWriter(fw); //nova instancia BW que reb com a parametre fw
+        bw.write(text); //bw escriu el text rebut com a parametre
+
+    if(text!=null) {
+
+        escrit = true;
 
     }
-
 
         return escrit;
     }
 
+    public String llegir(int numlinies){
+
+
+        String llegit= " ";
+        return "El text escrit és:" +llegit;
+    }
 
 }

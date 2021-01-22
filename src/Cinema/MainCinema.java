@@ -20,22 +20,24 @@ public class MainCinema {
 
         do{
 
-
-
-            spectatorList.add(new Spectator());
+            spectatorList.add(new Spectator()); //every loop creates a new object Spectator with random data
 
             i++;
+            String[] seats= new String[]{"O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O", };
+            for(int j=1; j<= seats.length; j++){ //for loop to start printin the seats
 
-            String[] seats= new String[]{"O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O", };
-            for(int j=0; j< seats.length; j++){
+                System.out.print(seats[j-1]); //prints seats
 
-                System.out.print(seats[(j)]);
-                if(j%8==0&&j!=0){
+                if(j%8==0){
+
                     System.out.println("\t");
-                }
 
+                }
             }
             System.out.println("\n");
+
+
+            //if (SpectatorList.get(i); //.getMoney()>=cine1.getTicketPrice());
 
         }while((!cine1.getIsfull()) && i<10);
 
