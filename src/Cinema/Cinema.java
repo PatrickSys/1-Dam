@@ -3,21 +3,34 @@ package Cinema;
 public class Cinema {
 
     private final double TicketPrice;
-    private Movie RunningMovie;
+    private Movie CurrentMovie;
+    private boolean isfull=false;
 
-    public Cinema(int TicketPrice){
+
+    public Cinema(double TicketPrice){
         this.TicketPrice=TicketPrice;
 
     }
 
 
-
-    private void setRunningMovie(Movie movie){
-        this.RunningMovie=movie;
+    public boolean getIsfull() {
+        return isfull;
     }
 
-    private String getRunningMovie(Cinema cinema){
-        return this.RunningMovie.get
+    public void setIsfull(boolean isfull) {
+        this.isfull = isfull;
+    }
+
+    protected void setCurrentMovie(Movie movie){
+        this.CurrentMovie=movie;
+    }
+
+    protected String getCurrentMovie() {
+        return CurrentMovie.getName();
+    }
+
+    protected String getCinema(){
+        return "Current movie is: " +CurrentMovie.getName()+ ", ticket price is: " +TicketPrice + "$";
     }
 
 }

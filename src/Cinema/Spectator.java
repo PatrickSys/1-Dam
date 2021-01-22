@@ -2,17 +2,35 @@ package Cinema;
 
 public class Spectator {
 
-    private int money;
+    private double money;
     private int age;
 
-    public Spectator(int money, int age){
-        this.money=money;
-        this.age=age;
-
+    public double getMoney() {
+        return money;
     }
 
 
 
+    public int getAge() {
+        return age;
+    }
+
+
+
+
+
+
+    public Spectator(){
+        this.money=Math.random()*100;
+
+        this.age=(int)(Math.random()*100);
+
+
+    }
+    @Override
+    public String toString() {
+        return  "money: " + money +  ", age : " + age;
+    }
 
 
 }

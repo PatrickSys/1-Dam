@@ -46,4 +46,9 @@ public class Movie {
     public void setDirectorName(String directorName) {
         this.directorName = directorName;
     }
+
+    public String getMovieInfo(){
+
+        return "Movie title is: " + this.getName() + ", duration is: " +this.duration+ " min, minimum age is: " +this.minAge+ "yo, director name is: "  +this.directorName;
+    }
 }
