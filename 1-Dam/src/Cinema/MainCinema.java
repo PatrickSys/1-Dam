@@ -11,7 +11,7 @@ public class MainCinema {
 
         int i=0;
         ArrayList<Spectator> spectatorList = new ArrayList<>();
-        cine1.setCurrentMovie(Frankstein);
+        //cine1.setCurrentMovie(Frankstein);
 
         System.out.println(cine1.getCinema());
         System.out.println(Frankstein.getMovieInfo());
@@ -20,13 +20,14 @@ public class MainCinema {
 
         do{
 
-            spectatorList.add(new Spectator()); //every loop creates a new object Spectator with random data
+            //spectatorList.add(new Spectator()); //every loop creates a new object Spectator with random data
 
             i++;
-            String[] seats= new String[]{"O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O","O", "O", "O", "O", };
-            for(int j=1; j<= seats.length; j++){ //for loop to start printin the seats
+            ArrayList <String> seats= new ArrayList<>();
+            //for (int k=0; i<=)
+            for(int j=1; j<= seats.size(); j++){ //for loop to start printin the seats
 
-                System.out.print(seats[j-1]); //prints seats
+                System.out.print(seats.get(j-1)); //prints seats
 
                 if(j%8==0){
 

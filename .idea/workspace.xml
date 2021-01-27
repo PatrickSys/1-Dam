@@ -1,62 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bucles/BubbleSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bucles/Ej12Bucles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bucles/Ej13Bucles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bucles/Ej9bucles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bucles/OrdenarMatrius.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cinema/Cinema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cinema/MainCinema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cinema/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cinema/Spectator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClasseCotxe/CotxeAbstracte.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClasseCotxe/CotxeSegonaPart_Patrick.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClasseCotxe/Cotxe_Patrick.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClasseCotxe/EstatMotorCotxe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClasseCotxe/InterfaceCotxe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClasseCotxe/TestCotxeSegonaPart_Patrick.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClasseCotxe/TestCotxe_Patrick.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClasseCotxe/TipusCanvi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompSim/Computer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompSim/MainComputer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompSim/Software.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompSim/operatingSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Condicionals/Ej10Condicionals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Condicionals/Ej4Condicionals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Condicionals/Ej5Condicionals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Condicionals/Ej6condicionals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Condicionals/Ej9Condicionals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DiesEntreDates/CalcularDiesEntreDates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DiesEntreDates/DataXS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DiesEntreDates/DiesEntreDates_Patrick_Rosselló.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DiesEntreDates/TestDiesEntreDates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Endevinaelnombre/GuessGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Endevinaelnombre/GuessTheNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/FitxerDAM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/TestFitxer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menus/Menu1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menus/Menu2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menus/excsmenus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menus/menu3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/POO/DiesEntreDates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/POO/Parking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/POO/runtest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parking/ParkingTest_Patrick_Rossello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parking/Parking_Patrick_Rossello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pildoras/Coche.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pildoras/Furgoneta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pildoras/Pruebas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pildoras/Uso_Empleado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pildoras/Uso_Persona.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pildoras/Uso_Vehiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/JavaFX/Testing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Coche.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Furgoneta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Pruebas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Uso_Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Uso_Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Uso_Vehiculo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +39,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1nbwgHgNe9pglnm2S196oio19Xa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -75,6 +48,46 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SideProjects" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bitaz\IdeaProjects\SideProjects" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ParkingTest_Patrick_Rossello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Parking.ParkingTest_Patrick_Rossello" />
+      <module name="1-Dam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ParkingTest_Patrick_Rossello" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,10 +98,94 @@
       <option name="presentableId" value="Default" />
       <updated>1611672207296</updated>
       <workItem from="1611672208328" duration="69000" />
+      <workItem from="1611757759384" duration="60000" />
+      <workItem from="1611759099104" duration="151000" />
+      <workItem from="1611759353894" duration="56000" />
+      <workItem from="1611759422361" duration="3264000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="760" y="274" key="#Project_Structure" timestamp="1611785623327">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785623327" />
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611786186525">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786186524" />
+    <state x="1009" y="502" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1611786105455">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1009" y="502" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786105455" />
+    <state x="1060" y="441" key="FileChooserDialogImpl" timestamp="1611785621928">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="441" key="FileChooserDialogImpl/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785621928" />
+    <state width="2517" height="554" key="GridCell.Tab.0.bottom" timestamp="1611786128142">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="554" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786128142" />
+    <state width="2517" height="554" key="GridCell.Tab.0.center" timestamp="1611786128142">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="554" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786128142" />
+    <state width="2517" height="554" key="GridCell.Tab.0.left" timestamp="1611786128141">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="554" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786128141" />
+    <state width="2517" height="554" key="GridCell.Tab.0.right" timestamp="1611786128142">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="554" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786128142" />
+    <state x="760" y="274" key="SettingsEditor" timestamp="1611768584209">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="760" y="274" key="SettingsEditor/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611768584209" />
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611768977816">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611768977816" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
