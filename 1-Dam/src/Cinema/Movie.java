@@ -1,13 +1,23 @@
 package Cinema;
 
+//************************************************************************
+//  Made by        PatrickSys
+//  Date           21/01/2021
+//  Package        Cinema
+//
+// Movie class, nothing much to say
+//************************************************************************
+
 public class Movie {
 
-    private String name;
-    private int duration;
-    private int minAge;
-    private String directorName;
+    //Movie variables we want to know
+    private final String name;
+    private final int duration;
+    private final int minAge;
+    private final String directorName;
 
 
+    //Constructor
     public Movie(String name, int duration, int minAge, String directorName) {
         this.name = name;
         this.duration = duration;
@@ -15,40 +25,22 @@ public class Movie {
         this.directorName = directorName;
     }
 
+    /**
+     * Methods
+     */
+
+    //Info we want to know about the Movie
+    public String getMovieInfo() {
+
+        return "El títol de la pel·lícula és: " + this.getName() + ", la seva duració és de: " + this.duration + " min, l'edat mínima és de: " + this.minAge + "anys, i el nom del director és: " + this.directorName;
+    }
+
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getDuration() {
-        return duration;
-    }
-
-    public void setDuration(int duration) {
-        this.duration = duration;
     }
 
     public int getMinAge() {
         return minAge;
     }
 
-    public void setMinAge(int minAge) {
-        this.minAge = minAge;
-    }
-
-    public String getDirectorName() {
-        return directorName;
-    }
-
-    public void setDirectorName(String directorName) {
-        this.directorName = directorName;
-    }
-
-    public String getMovieInfo(){
-
-        return "Movie title is: " + this.getName() + ", duration is: " +this.duration+ " min, minimum age is: " +this.minAge+ "yo, director name is: "  +this.directorName;
-    }
 }

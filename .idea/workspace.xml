@@ -19,21 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="">
+    <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="YY">
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/proves.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Cinema/Cinema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/JavaFX/Testing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Coche.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Furgoneta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Pruebas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Uso_Empleado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Uso_Persona.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Pildoras/Uso_Vehiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Cinema/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/Spectator.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Cinema/Spectator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,19 +57,21 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bitaz\IdeaProjects\SideProjects" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ParkingTest_Patrick_Rossello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Parking.ParkingTest_Patrick_Rossello" />
+  <component name="RunManager" selected="Application.MainCinema">
+    <configuration name="MainCinema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cinema.MainCinema" />
       <module name="1-Dam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Parking.*" />
+          <option name="PATTERN" value="Cinema.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,20 +79,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="proves" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proves" />
+      <module name="1-Dam" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.MainCinema" />
+      <item itemvalue="Application.proves" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ParkingTest_Patrick_Rossello" />
+        <item itemvalue="Application.MainCinema" />
+        <item itemvalue="Application.proves" />
       </list>
     </recent_temporary>
   </component>
@@ -101,8 +109,19 @@
       <workItem from="1611757759384" duration="60000" />
       <workItem from="1611759099104" duration="151000" />
       <workItem from="1611759353894" duration="56000" />
-      <workItem from="1611759422361" duration="3264000" />
+      <workItem from="1611759422361" duration="3301000" />
+      <workItem from="1611786227994" duration="2001000" />
+      <workItem from="1611926041101" duration="23111000" />
+      <workItem from="1612030321472" duration="424000" />
     </task>
+    <task id="LOCAL-00001" summary="YY">
+      <created>1611786207209</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611786207209</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,72 +139,97 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="YY" />
+    <option name="LAST_COMMIT_MESSAGE" value="YY" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1611785623327">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785623327" />
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611786186525">
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611941186067">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786186524" />
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611941186067" />
+    <state x="1085" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1611930320264">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1085" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611930320264" />
     <state x="1009" y="502" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1611786105455">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1009" y="502" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786105455" />
+    <state x="825" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611929815623">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="825" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611929815623" />
     <state x="1060" y="441" key="FileChooserDialogImpl" timestamp="1611785621928">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="441" key="FileChooserDialogImpl/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785621928" />
-    <state width="2517" height="554" key="GridCell.Tab.0.bottom" timestamp="1611786128142">
+    <state width="2517" height="133" key="GridCell.Tab.0.bottom" timestamp="1611950676075">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="554" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786128142" />
-    <state width="2517" height="554" key="GridCell.Tab.0.center" timestamp="1611786128142">
+    <state width="2517" height="133" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611950676075" />
+    <state width="2517" height="133" key="GridCell.Tab.0.center" timestamp="1611950676075">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="554" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786128142" />
-    <state width="2517" height="554" key="GridCell.Tab.0.left" timestamp="1611786128141">
+    <state width="2517" height="133" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611950676075" />
+    <state width="2517" height="133" key="GridCell.Tab.0.left" timestamp="1611950676075">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="554" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786128141" />
-    <state width="2517" height="554" key="GridCell.Tab.0.right" timestamp="1611786128142">
+    <state width="2517" height="133" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611950676075" />
+    <state width="2517" height="133" key="GridCell.Tab.0.right" timestamp="1611950676075">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="554" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786128142" />
-    <state x="760" y="274" key="SettingsEditor" timestamp="1611768584209">
+    <state width="2517" height="133" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611950676075" />
+    <state width="2517" height="345" key="GridCell.Tab.1.bottom" timestamp="1611935665978">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="760" y="274" key="SettingsEditor/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611768584209" />
-    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611768977816">
+    <state width="2517" height="345" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611935665978" />
+    <state width="2517" height="345" key="GridCell.Tab.1.center" timestamp="1611935665978">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611768977816" />
+    <state width="2517" height="345" key="GridCell.Tab.1.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611935665978" />
+    <state width="2517" height="345" key="GridCell.Tab.1.left" timestamp="1611935665978">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="345" key="GridCell.Tab.1.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611935665978" />
+    <state width="2517" height="345" key="GridCell.Tab.1.right" timestamp="1611935665978">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="345" key="GridCell.Tab.1.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611935665978" />
+    <state x="760" y="274" key="SettingsEditor" timestamp="1611929772310">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="760" y="274" key="SettingsEditor/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611929772310" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1611786214907">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786214907" />
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611929088409">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611929088409" />
+    <state x="818" y="436" width="924" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611786395366">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="818" y="436" width="924" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611786395366" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="parking" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

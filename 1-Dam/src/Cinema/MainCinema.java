@@ -4,46 +4,46 @@ import java.util.ArrayList;
 
 public class MainCinema {
 
-
     public static void main(String[] args) {
+
+        //Get the current system time to later calculate run time
+        long startTime = System.currentTimeMillis();
+
+
+        //Create instances
         Movie Frankstein = new Movie("Frankstein", 189, 12, "Jéremy Lacroix");
         Cinema cine1= new Cinema(8.5);
 
-        int i=0;
-        ArrayList<Spectator> spectatorList = new ArrayList<>();
-        //cine1.setCurrentMovie(Frankstein);
+        //ArrayList of spectators
+        ArrayList <Integer> cine1Seats= new ArrayList<>();
 
-        System.out.println(cine1.getCinema());
+        //Set Cinema Capacity to the desired size
+        cine1.setCinemaCapacity(8,9,cine1Seats);
+
+        //Set Cinema Movie
+        cine1.setCurrentMovie(Frankstein);
+
+        //Get Info we want to know
+        System.out.println(cine1.getCinemaInfo());
         System.out.println(Frankstein.getMovieInfo());
 
+        //Every loop while the cinema is not full, it will create a new random spectator, print the actual seats,
+        //then tries to sit a new spectator until the cinema is full
+        while(!cine1.isFull()){
+
+            Spectator spectator= new Spectator();
+
+            cine1.printSeats(cine1Seats);
+
+            cine1.sitSpectator(spectator, cine1, Frankstein, cine1Seats);
+        }
+        System.out.println("\n" +cine1.getEarnedMoney()+ " € recaudats");
+
+        //Calculate run time
+        long endTime   = System.currentTimeMillis();
+        long totalTime = endTime - startTime;
 
 
-        do{
-
-            //spectatorList.add(new Spectator()); //every loop creates a new object Spectator with random data
-
-            i++;
-            ArrayList <String> seats= new ArrayList<>();
-            //for (int k=0; i<=)
-            for(int j=1; j<= seats.size(); j++){ //for loop to start printin the seats
-
-                System.out.print(seats.get(j-1)); //prints seats
-
-                if(j%8==0){
-
-                    System.out.println("\t");
-
-                }
-            }
-            System.out.println("\n");
-
-
-            //if (SpectatorList.get(i); //.getMoney()>=cine1.getTicketPrice());
-
-        }while((!cine1.getIsfull()) && i<10);
-
-
+        System.out.println("El programa ha tardat " + totalTime + " milisegons en resoldre el problema");
     }
-
-
 }
