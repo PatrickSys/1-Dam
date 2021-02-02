@@ -17,10 +17,11 @@ public class Cinema {
     //Cinema variables
     private final double ticketPrice;
     private Movie currentMovie;
-    private boolean isFull =false;
     private int cinemaCapacity;
     private int seatColumns;
     private double earnedMoney;
+    private boolean isFull =false;
+
 
     //Constructor
     public Cinema(double TicketPrice){
@@ -31,7 +32,6 @@ public class Cinema {
     /**
      * Methods
      */
-
 
     //Get Cinema required info
     public String getCinemaInfo(){
@@ -60,13 +60,54 @@ public class Cinema {
 
 
 
+
+
+    /**
+     * This method will fulfill the cinema with spectators with enough money and age
+     * @param cinema the cinema where the spectator has to be sitted
+     * @param movie to get it's minimum age
+     * @param seats the array to fill
+     */
+    public void fillCinema(Cinema cinema, Movie movie, ArrayList<Integer> seats){
+
+        while(!isFull) {
+            //creates new spectator to sit and the boolean variable used as a flag
+            Spectator spectator = new Spectator();
+            boolean sit = false;
+
+            //if none seat is free make isFull true and end the program
+            if (!seats.contains(0)) {
+                printSeats(seats);
+                isFull = true;
+            }
+
+            //if spectator meets requirements
+            else if (spectator.getMoney() >= cinema.getTicketPrice() && spectator.getAge() >= movie.getMinAge()) {
+
+                while (!sit) {
+
+                    //looks for an empty spot randomly then sits on it
+                    for (int i = (int) (Math.random() * cinemaCapacity); i < cinemaCapacity && !sit; i++) {
+
+                        if (seats.get(i) == 0) {
+                            printSeats(seats);
+                            seats.set(i, 1);
+                            sit = true;
+                            earnedMoney += ticketPrice;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     /**
      * This method prints the seats
      * @param seats the ArrayList of seats to print
+     * it's used by fillCinema method
      */
-    public void printSeats(ArrayList<Integer> seats){
-
-        //for loop will print each position of the array
+    private void printSeats(ArrayList<Integer> seats){
         System.out.println("\n");
         for(int j=1; j<=cinemaCapacity; j++){
 
@@ -78,46 +119,13 @@ public class Cinema {
         }
     }
 
+
     /**
-     * This method will fulfill the cinema with spectators with enough money and age
-     * @param spectator the spectator to sit
-     * @param cinema the cinema where the spectator has to be sitted
-     * @param movie to get it's minimum age
-     * @param seats the array to fill
+     * getters and setters
      */
-    public void sitSpectator(Spectator spectator,Cinema cinema, Movie movie, ArrayList<Integer> seats){
-        //Boolean used as a flag
-        boolean sit =false;
-
-        //if none seat is free make isFull true and end the program
-        if(!seats.contains(0)){
-            this.isFull=true;
-        }
-
-         //if spectator meets requirements
-         else if (spectator.getMoney() >= cinema.getTicketPrice() && spectator.getAge() >= movie.getMinAge()) {
-
-             while(!sit){
-
-                    //looks for an empty spot randomly then sits on it
-                    for (int i = (int)(Math.random()*cinemaCapacity); i < cinemaCapacity && !sit; i++) {
-
-                        if (seats.get(i) == 0) {
-                            seats.set(i, 1);
-                            sit = true;
-                            earnedMoney+=8.5;
-                        }
-                    }
-                }
-        }
-    }
 
     public double getTicketPrice() {
         return ticketPrice;
-    }
-
-    public boolean isFull() {
-        return isFull;
     }
 
     public void setCurrentMovie(Movie movie){

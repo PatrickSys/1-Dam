@@ -10,7 +10,7 @@ package Cinema;
 
 public class Movie {
 
-    //Movie variables we want to know
+    //Movie attributes we want to know
     private final String name;
     private final int duration;
     private final int minAge;
@@ -32,7 +32,8 @@ public class Movie {
     //Info we want to know about the Movie
     public String getMovieInfo() {
 
-        return "El títol de la pel·lícula és: " + this.getName() + ", la seva duració és de: " + this.duration + " min, l'edat mínima és de: " + this.minAge + "anys, i el nom del director és: " + this.directorName;
+        return "El títol de la pel·lícula és: " + this.getName() + ", la seva duració és de: " + this.duration +
+                " min,\n l'edat mínima és de: " + this.minAge + "anys, i el nom del director és: " + this.directorName;
     }
 
     public String getName() {

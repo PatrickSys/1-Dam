@@ -18,7 +18,7 @@ public class MainCinema {
         ArrayList <Integer> cine1Seats= new ArrayList<>();
 
         //Set Cinema Capacity to the desired size
-        cine1.setCinemaCapacity(8,9,cine1Seats);
+        cine1.setCinemaCapacity(15,15,cine1Seats);
 
         //Set Cinema Movie
         cine1.setCurrentMovie(Frankstein);
@@ -27,16 +27,9 @@ public class MainCinema {
         System.out.println(cine1.getCinemaInfo());
         System.out.println(Frankstein.getMovieInfo());
 
-        //Every loop while the cinema is not full, it will create a new random spectator, print the actual seats,
-        //then tries to sit a new spectator until the cinema is full
-        while(!cine1.isFull()){
+        //fill the cinema
+        cine1.fillCinema(cine1, Frankstein, cine1Seats);
 
-            Spectator spectator= new Spectator();
-
-            cine1.printSeats(cine1Seats);
-
-            cine1.sitSpectator(spectator, cine1, Frankstein, cine1Seats);
-        }
         System.out.println("\n" +cine1.getEarnedMoney()+ " € recaudats");
 
         //Calculate run time
