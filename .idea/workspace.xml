@@ -20,6 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="Cinema finished">
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/Bingo/Cartolina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/Bingo/Machine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/Bingo/MainBingo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/Bingo/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,23 +64,16 @@
       <recent name="C:\Users\bitaz\IdeaProjects\SideProjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainCinema">
-    <configuration name="MainCinema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Cinema.MainCinema" />
+  <component name="RunManager">
+    <configuration name="MainBingo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bingo.MainBingo" />
       <module name="1-Dam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Cinema.*" />
+          <option name="PATTERN" value="Bingo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="proves" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="proves" />
-      <module name="1-Dam" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,14 +89,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.MainCinema" />
-      <item itemvalue="Application.proves" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainCinema" />
-        <item itemvalue="Application.proves" />
+        <item itemvalue="Application.MainBingo" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +113,7 @@
       <workItem from="1612030321472" duration="14182000" />
       <workItem from="1612289720449" duration="139000" />
       <workItem from="1612289941824" duration="5000" />
-      <workItem from="1612295199481" duration="610000" />
+      <workItem from="1612295199481" duration="3478000" />
     </task>
     <task id="LOCAL-00001" summary="YY">
       <created>1611786207209</created>
@@ -144,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612289840777</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cinema finished">
+      <created>1612353621314</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612353621314</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,10 +171,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785623327" />
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611941186067">
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612356347342">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611941186067" />
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612356347342" />
     <state x="-784" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1612040802292">
       <screen x="-1360" y="0" width="1360" height="728" />
     </state>
@@ -193,22 +192,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="441" key="FileChooserDialogImpl/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785621928" />
-    <state width="2517" height="862" key="GridCell.Tab.0.bottom" timestamp="1612050960275">
+    <state width="2517" height="439" key="GridCell.Tab.0.bottom" timestamp="1612356585407">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="862" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612050960275" />
-    <state width="2517" height="862" key="GridCell.Tab.0.center" timestamp="1612050960275">
+    <state width="2517" height="439" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612356585407" />
+    <state width="2517" height="439" key="GridCell.Tab.0.center" timestamp="1612356585407">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="862" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612050960275" />
-    <state width="2517" height="862" key="GridCell.Tab.0.left" timestamp="1612050960275">
+    <state width="2517" height="439" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612356585407" />
+    <state width="2517" height="439" key="GridCell.Tab.0.left" timestamp="1612356585407">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="862" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612050960275" />
-    <state width="2517" height="862" key="GridCell.Tab.0.right" timestamp="1612050960275">
+    <state width="2517" height="439" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612356585407" />
+    <state width="2517" height="439" key="GridCell.Tab.0.right" timestamp="1612356585407">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="862" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612050960275" />
+    <state width="2517" height="439" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612356585407" />
     <state width="2517" height="345" key="GridCell.Tab.1.bottom" timestamp="1611935665978">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
