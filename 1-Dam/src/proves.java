@@ -7,6 +7,9 @@
 //************************************************************************
 
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class proves {
 
 
@@ -15,17 +18,9 @@ public class proves {
     {
 
 
-
-        for (int a = (0); a<10; a++) {
-
-
-            for (int i = (((int) (Math.random() * 150)-1)); i < 10; i++) {
-
-                System.out.println(i + "i");
-            }
-
-            System.out.println("\n");
-        }
+        ArrayList<Integer> prova = new ArrayList<>();
+        prova.ensureCapacity(20);
+        System.out.println(prova.toString());
     }
 
 

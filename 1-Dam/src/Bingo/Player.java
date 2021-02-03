@@ -1,7 +1,7 @@
 package Bingo;
 //************************************************************************
 //  Made by        PatrickSys
-//  Date           03/02/2021
+//  Date           01/02/2021
 //  Package        Bingo
 //
 // Description 
@@ -11,19 +11,24 @@ package Bingo;
 import java.util.ArrayList;
 import java.util.Random;
 
+
 public class Player {
 
 
 
     //Instanciam una cartolina per a cada jugador
-    Cartolina playerCartolina= new Cartolina();
-    ArrayList<Integer> numbersGenerated = new ArrayList<>();
+    ArrayList <Integer> cartolina= new ArrayList<>();
+
     //Creates new random between 1 and 99
     Random rand = new Random();
     int max=100;
     int min=1;
-    int number = rand.nextInt((max - min) + 1) + min;
     String name;
+    int cartolinaSize=10;
+
+
+
+    boolean playerWon=false;
 
 
 
@@ -31,33 +36,49 @@ public class Player {
     //Assignam a cada jugador un objecte cartolina amb dues cartolines amb els nombres aleatoris
     public Player(String name){
 
-        this.playerCartolina.generarCartolines();
+        generateCartolina();
         this.name=name;
-
     }
 
 
 
-    public void checkNumber(){
 
-        if (playerCartolina.cartolina1.isEmpty()&playerCartolina.cartolina2.isEmpty()){
+    private void generateCartolina() {
 
-            System.out.println("El jugador " +name + " canta Bingo!");
-        }
 
-        if(!numbersGenerated.contains(number)) {
-            if (playerCartolina.cartolina1.contains(number)) {
-                playerCartolina.cartolina1.remove(number);
+        setCartolina();
+        int number;
+        Random rand = new Random();
 
+
+
+
+        //mentres la cartolina tengui alguna posició nula assignarà
+        while(cartolina.contains(null)) {
+            for (int i = 0; i < cartolinaSize; i++) {
+
+                number = rand.nextInt((max - min) + min) + 1;
+                if (!cartolina.contains(number)) {
+                    cartolina.set(i, number);
+
+                }
             }
-            if (playerCartolina.cartolina2.contains(number)) {
-                playerCartolina.cartolina2.remove(number);
-            }
-            numbersGenerated.add(number);
-
         }
-
     }
+
+
+    //assigna els numeros de la cartolina a valor null
+    private void setCartolina(){
+
+        for (int i=0; i<cartolinaSize; i++){
+
+            cartolina.add(null);
+        }
+    }
+
+
+
+
 
 
 }
