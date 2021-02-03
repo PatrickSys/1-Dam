@@ -8,10 +8,30 @@ package Bingo;
 //************************************************************************
 
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Machine {
 
 
+    int number;
+    boolean playerWon=false;
 
 
-    //Cartolina
-}
+    public void playBingo(Player player1, Player player2) {
+
+
+
+        while (playerWon) {
+
+
+            player1.checkNumber();
+            player2.checkNumber();
+
+
+            }
+        }
+    }
+
+
+
