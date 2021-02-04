@@ -14,11 +14,11 @@ import java.util.Random;
 public class Machine {
 
     Random rand = new Random();
-    int max=100;
-    int min=1;
+    private final int max=100;
+    private final int min=1;
 
     boolean playerWon=false;
-    int number;
+    private int number;
     ArrayList<Integer> numbersGenerated = new ArrayList<>();
 
 
@@ -35,7 +35,6 @@ public class Machine {
             checkNumber(player1, player2);
 
 
-
             }
         }
 
@@ -44,8 +43,7 @@ public class Machine {
     //logica de comprovar el numero general, manejar els arraylist...
     private void checkNumber(Player player1, Player player2){
 
-        System.out.println(player1.cartolina.toString() + player1.name);
-        System.out.println(player2.cartolina.toString() + player2.name);
+
         //quan esta buida el jugador canta bingo
 
         if(!numbersGenerated.contains(number)) { //comprovam que un numero no es repeteixi
@@ -59,12 +57,12 @@ public class Machine {
 
              else if (player1.cartolina.isEmpty()) {
 
-                System.out.println("El jugador " + player1.name + " ha canta Bingo!");
+                System.out.println("El jugador " + player1.getName() + " ha canta Bingo!");
                 playerWon = true;
             }
              else if(player2.cartolina.isEmpty()){
 
-                System.out.println("El jugador " + player2.name + " ha cantat Bingo!!");
+                System.out.println("El jugador " + player2.getName() + " ha cantat Bingo!!");
                 playerWon=true;
             }
 
@@ -89,8 +87,6 @@ public class Machine {
             }
 
         }
-
-
     }
     }
 

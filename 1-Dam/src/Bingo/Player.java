@@ -21,10 +21,10 @@ public class Player {
 
     //Creates new random between 1 and 99
     Random rand = new Random();
-    int max=100;
-    int min=1;
-    String name;
-    int cartolinaSize=10;
+    private int max=100;
+    private int min=1;
+    private String name;
+    private int cartolinaSize=10;
 
 
 
@@ -77,8 +77,7 @@ public class Player {
     }
 
 
-
-
-
-
+    public String getName() {
+        return name;
+    }
 }
