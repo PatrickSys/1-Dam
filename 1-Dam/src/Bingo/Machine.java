@@ -16,7 +16,6 @@ public class Machine {
     Random rand = new Random();
     private final int max=100;
     private final int min=1;
-
     boolean playerWon=false;
     private int number;
     ArrayList<Integer> numbersGenerated = new ArrayList<>();

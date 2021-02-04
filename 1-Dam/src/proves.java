@@ -8,6 +8,7 @@
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 public class proves {
@@ -19,8 +20,19 @@ public class proves {
 
 
         ArrayList<Integer> prova = new ArrayList<>();
-        prova.ensureCapacity(20);
+        for (int i=0; i<20; i++){
+
+            prova.add(null);
+        }
+
+
+        //prova.removeAll(Collections.singleton(null));
+        System.out.println(prova.stream().toString());
         System.out.println(prova.toString());
+        System.out.println(prova.isEmpty());
+
+
+
     }
 
 
