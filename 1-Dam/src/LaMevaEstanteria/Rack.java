@@ -9,12 +9,11 @@ package LaMevaEstanteria;
 
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Rack {
 
 
-    //New books ArrayList
+    //New books ArrayList, rackCapacity Attribute
     ArrayList<Book> books = new ArrayList<>();
     private final int rackCapacity;
 
@@ -28,9 +27,6 @@ public class Rack {
     }
 
 
-
-
-
     //adds a book if it's not already on the rack and it's not full
     public void addBook(Book book){
 
@@ -39,7 +35,6 @@ public class Rack {
 
         //checks
         if(!(books.contains(book))){
-
 
                 //checks the spot available then adds the book
                 int count=0;
@@ -61,7 +56,6 @@ public class Rack {
 
 
     }
-
 
 
     //Identifier is either title or author
@@ -94,37 +88,41 @@ public class Rack {
 
         public void showTopTen(){
 
-            System.out.println("Top 10 de llibres segons qualificació: ");
+        //counter to manage "top" books
+        int counter=1;
+
+            System.out.println("\n--- Top 10 de llibres segons qualificació: ---\n");
 
 
-            //sort
+        //loops from 10 points and for each point gets the books that belong that mark. Then prints it
+        for(int i=books.size(); i>-1; i--){
 
+            for (Book book : books) {
+                if (book != null) {
 
-
-
-        //loops through the array and show titles with it's marks
-
-            //de 10 a 0
-        for(int i=books.size()-1; i>-1; i--){
-
-
-                if(books.get(i)!=null) {
-
+                    if (book.getRating() == i) {
+                        System.out.println(counter + ". " + book.getTitle() + ", nota: " + book.getRating());
+                        counter++;
+                    }
 
                 }
-        }
-
-        for(int i = 0; i<books.size()-1; i++){
-
-            if(books.get(i)!=null) {
-
-
-                System.out.println(i+1 + ". : " + books.get(i).getTitle() + " nota: " + books.get(i).getRating());
             }
         }
 
+            System.out.println("\t");
 
+        }
 
+        //prints all the rack books
+        public void showRack(){
+
+            System.out.println("\n--- Llibres a l'estanteria ---\n");
+              for(int i=0; i<rackCapacity; i++){
+
+            if(books.get(i)!=null) {
+                System.out.println(books.get(i).getTitle());
+                 }
+            }
         }
 
     //Sets 10 array positions to null
