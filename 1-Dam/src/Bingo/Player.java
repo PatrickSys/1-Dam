@@ -21,7 +21,7 @@ public class Player {
 
     //Creates new random between 1 and 99
     Random rand = new Random();
-    private final int max=100;
+    private final int max=99;
     private final int min=1;
     private final String name;
     private final int cartolinaSize=10;
@@ -48,7 +48,6 @@ public class Player {
         int number;
         Random rand = new Random();
 
-
         //mentres la cartolina tengui alguna posició nula assignarà
         while(cartolina.contains(null)) {
             for (int i = 0; i < cartolinaSize; i++) {
@@ -60,6 +59,9 @@ public class Player {
                 }
             }
         }
+
+
+
     }
 
 

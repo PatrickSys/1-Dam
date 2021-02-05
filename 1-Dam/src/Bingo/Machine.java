@@ -14,7 +14,7 @@ import java.util.Random;
 public class Machine {
 
     Random rand = new Random();
-    private final int max=100;
+    private final int max=99;
     private final int min=1;
     boolean playerWon=false;
     private int number;
@@ -40,6 +40,7 @@ public class Machine {
     //logica de comprovar el numero general, manejar els arraylist...
     private void checkNumber(Player player1, Player player2){
 
+
         //quan esta buida el jugador canta bingo
         if(!numbersGenerated.contains(number)) { //comprovam que un numero no es repeteixi
 
@@ -50,7 +51,7 @@ public class Machine {
             }
 
              else if (player1.cartolina.isEmpty()) {
-                 System.out.println("El jugador " + player1.getName() + " ha canta Bingo!");
+                 System.out.println("El jugador " + player1.getName() + " ha cantat Bingo!!");
                  playerWon = true;
             }
              else if(player2.cartolina.isEmpty()){
@@ -76,6 +77,8 @@ public class Machine {
 
 
     private void playerHasNumber(Player player){
+
+
 
         if(player.cartolina.contains(number)){
 

@@ -25,6 +25,7 @@ public class MainBingo {
         long totalTime = endTime-startTime;
         System.out.println("Temps en resoldre el bingo: " + totalTime + "ms ");
 
+
     }
 
 

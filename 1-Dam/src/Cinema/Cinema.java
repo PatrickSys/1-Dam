@@ -108,6 +108,8 @@ public class Cinema {
      * it's used by fillCinema method
      */
     private void printSeats(ArrayList<Integer> seats){
+
+
         System.out.println("\n");
         for(int j=1; j<=cinemaCapacity; j++){
 
@@ -117,6 +119,7 @@ public class Cinema {
                 System.out.println("\t");
             }
         }
+
     }
 
 
