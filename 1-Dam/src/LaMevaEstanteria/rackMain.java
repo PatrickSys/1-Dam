@@ -17,7 +17,7 @@ public class rackMain {
         Rack e = new Rack(10);
 
         Book l1 = new Book("Theo va al Parc", "Robbinson", 6);
-        Book l2 = new Book("Tasmania", "J.K Namie", 7);
+        Book l2 = new Book("Tasmania", "J.K Namie", 4);
 
         e.addBook(l1);
         e.addBook(l2);
@@ -25,8 +25,8 @@ public class rackMain {
 
 
         Book l3 = new Book("E.T", "J.K Rowling", 9);
-        Book l4 = new Book("Theo va a l'escola", "Robbinson", 4);
-        Book l5 = new Book("Theo va al zoo", "Robbinson", 10);
+        Book l4 = new Book("Don Quijote de la Mancha", "Cervantes", 10);
+        Book l5 = new Book("Theo va al zoo", "Gibson", 8);
 
         e.addBook(l3);
         e.addBook(l4);
@@ -34,7 +34,7 @@ public class rackMain {
 
         e.showTopTen();
 
-        e.removeBook("E.T");
+        e.removeBook("Robbinson");
 
         e.showRack();
 

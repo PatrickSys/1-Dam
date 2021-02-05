@@ -159,12 +159,10 @@ public class Parking_Patrick_Rossello {
                 matriculesNoDiscapacitats.set(comprovarbuit(TipusPlacesParking.No_Discapacitat),matricula );
             }
 
-
             else {
                 matriculesNoDiscapacitats.add(matricula);
                 this.places_no_discapacitats_lliures--;
             }
-
 
         return matriculesNoDiscapacitats.indexOf(matricula);
 

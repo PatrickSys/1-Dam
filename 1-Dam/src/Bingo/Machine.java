@@ -27,7 +27,6 @@ public class Machine {
     //mentres no hi hagi un guanyador s'executara el joc
     public void playBingo(Player player1, Player player2) {
 
-
         while (!playerWon) {
             System.out.println("Treim la bolla: " + number);
             number = rand.nextInt((max - min) + min)+1;
@@ -42,11 +41,8 @@ public class Machine {
     //logica de comprovar el numero general, manejar els arraylist...
     private void checkNumber(Player player1, Player player2){
 
-
         //quan esta buida el jugador canta bingo
-
         if(!numbersGenerated.contains(number)) { //comprovam que un numero no es repeteixi
-
 
             //si els dos acaben els nombres a la vegada, hi ha empat
             if(player1.cartolina.isEmpty()&player2.cartolina.isEmpty()){
@@ -55,14 +51,12 @@ public class Machine {
             }
 
              else if (player1.cartolina.isEmpty()) {
-
-                System.out.println("El jugador " + player1.getName() + " ha canta Bingo!");
-                playerWon = true;
+                 System.out.println("El jugador " + player1.getName() + " ha canta Bingo!");
+                 playerWon = true;
             }
              else if(player2.cartolina.isEmpty()){
-
-                System.out.println("El jugador " + player2.getName() + " ha cantat Bingo!!");
-                playerWon=true;
+                 System.out.println("El jugador " + player2.getName() + " ha cantat Bingo!!");
+                 playerWon=true;
             }
 
             //si el nombre no es repeteix i un jugador el té, el treu de la cartolina i l'entra a la llista de noms generats
@@ -70,14 +64,10 @@ public class Machine {
 
 
                 if (player1.cartolina.contains(number)) {
-
-                    //System.out.println("treim" +number);
                     player1.cartolina.remove((Integer) number);
                     numbersGenerated.add(number);
                 }
                 if (player2.cartolina.contains(number)) {
-
-                    //System.out.println("treim" +number);
                     player2.cartolina.remove((Integer) number);
                     numbersGenerated.add(number);
                 }

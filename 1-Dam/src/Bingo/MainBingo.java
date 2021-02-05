@@ -18,6 +18,5 @@ public class MainBingo {
         Player player1= new Player("Juan");
         Player player2 = new Player("Pedro");
         Bingo.playBingo(player1, player2);
-
     }
 }
