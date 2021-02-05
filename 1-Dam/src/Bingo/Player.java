@@ -41,16 +41,12 @@ public class Player {
     }
 
 
-
-
     private void generateCartolina() {
 
 
         setCartolina();
         int number;
         Random rand = new Random();
-
-
 
 
         //mentres la cartolina tengui alguna posició nula assignarà

@@ -28,7 +28,6 @@ public class Machine {
     public void playBingo(Player player1, Player player2) {
 
         while (!playerWon) {
-            System.out.println("Treim la bolla: " + number);
             number = rand.nextInt((max - min) + min)+1;
             checkNumber(player1, player2);
 
@@ -62,18 +61,27 @@ public class Machine {
             //si el nombre no es repeteix i un jugador el té, el treu de la cartolina i l'entra a la llista de noms generats
             else {
 
+                System.out.println("Treim la bolla: " + number);
 
-                if (player1.cartolina.contains(number)) {
-                    player1.cartolina.remove((Integer) number);
-                    numbersGenerated.add(number);
-                }
-                if (player2.cartolina.contains(number)) {
-                    player2.cartolina.remove((Integer) number);
-                    numbersGenerated.add(number);
-                }
-
+                playerHasNumber(player1);
+                playerHasNumber(player2);
 
             }
+
+
+
+        }
+    }
+
+
+
+    private void playerHasNumber(Player player){
+
+        if(player.cartolina.contains(number)){
+
+            player.cartolina.remove((Integer) number);
+            numbersGenerated.add(number);
+            System.out.println("\nEl jugador " + player.getName()+ " té el numero " +number +" i el tatxa de la cartolina\n" );
 
         }
     }
