@@ -28,7 +28,6 @@ public class Player {
 
 
 
-    boolean playerWon=false;
 
 
 

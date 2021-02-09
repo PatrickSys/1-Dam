@@ -1,11 +1,12 @@
 package LaMevaEstanteria;
-//************************************************************************
-//  Made by        PatrickSys
-//  Date           04/02/2021
-//  Package        LaMevaEstanteria
-//
-// Description 
-//************************************************************************
+
+/************************************************************************
+ Made by        PatrickSys
+ Date           04/02/2021
+ Package        LamevaEstanteria
+ Version        1.0
+ Description:   Main class
+ ************************************************************************/
 
 
 public class rackMain {
@@ -21,7 +22,6 @@ public class rackMain {
 
         e.addBook(l1);
         e.addBook(l2);
-
 
 
         Book l3 = new Book("E.T", "J.K Rowling", 9);

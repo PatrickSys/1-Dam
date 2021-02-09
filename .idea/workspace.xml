@@ -20,11 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="Done">
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/Parking/Parkingv2_Patrick_Rossello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bingo/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Bingo/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bingo/MainBingo.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Bingo/MainBingo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1-Dam/src/Bingo/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Bingo/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Rack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/rackMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/rackMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/Parking_Patrick_Rossello.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Parking/Parking_Patrick_Rossello.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,14 +61,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bitaz\IdeaProjects\SideProjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.rackMain">
+  <component name="RunManager" selected="Application.ParkingTest_Patrick_Rossello">
     <configuration name="ArrayListSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Bucles.ArrayListSort" />
       <module name="1-Dam" />
@@ -86,6 +88,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Bingo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingTest_Patrick_Rossello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Parking.ParkingTest_Patrick_Rossello" />
+      <module name="1-Dam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Parking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ParkingTest_Patrick_Rossello" />
         <item itemvalue="Application.rackMain" />
         <item itemvalue="Application.MainBingo" />
         <item itemvalue="Application.proves" />
@@ -145,6 +161,10 @@
       <workItem from="1612450741131" duration="21548000" />
       <workItem from="1612476282439" duration="1425000" />
       <workItem from="1612522704320" duration="1373000" />
+      <workItem from="1612524192592" duration="14000" />
+      <workItem from="1612615153096" duration="658000" />
+      <workItem from="1612785264467" duration="17336000" />
+      <workItem from="1612807546202" duration="5690000" />
     </task>
     <task id="LOCAL-00001" summary="YY">
       <created>1611786207209</created>
@@ -202,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612477696971</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Done">
+      <created>1612524197256</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612524197256</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,59 +278,59 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="825" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612452536429" />
-    <state x="1027" y="555" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1612523107911">
+    <state x="1027" y="555" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1612811612039">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1027" y="555" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612523107911" />
+    <state x="1027" y="555" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612811612039" />
     <state x="1060" y="441" key="FileChooserDialogImpl" timestamp="1611785621928">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="441" key="FileChooserDialogImpl/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785621928" />
-    <state width="2517" height="345" key="GridCell.Tab.0.bottom" timestamp="1612524087507">
+    <state width="2517" height="595" key="GridCell.Tab.0.bottom" timestamp="1612875431205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="345" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524087507" />
-    <state width="2517" height="345" key="GridCell.Tab.0.center" timestamp="1612524087507">
+    <state width="2517" height="595" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612875431205" />
+    <state width="2517" height="595" key="GridCell.Tab.0.center" timestamp="1612875431204">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="345" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524087507" />
-    <state width="2517" height="345" key="GridCell.Tab.0.left" timestamp="1612524087507">
+    <state width="2517" height="595" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612875431204" />
+    <state width="2517" height="595" key="GridCell.Tab.0.left" timestamp="1612875431204">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="345" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524087507" />
-    <state width="2517" height="345" key="GridCell.Tab.0.right" timestamp="1612524087507">
+    <state width="2517" height="595" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612875431204" />
+    <state width="2517" height="595" key="GridCell.Tab.0.right" timestamp="1612875431205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="345" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524087507" />
-    <state width="2517" height="345" key="GridCell.Tab.1.bottom" timestamp="1612524087507">
+    <state width="2517" height="595" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612875431205" />
+    <state width="2517" height="544" key="GridCell.Tab.1.bottom" timestamp="1612803153069">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="345" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524087507" />
-    <state width="2517" height="345" key="GridCell.Tab.1.center" timestamp="1612524087507">
+    <state width="2517" height="544" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612803153069" />
+    <state width="2517" height="544" key="GridCell.Tab.1.center" timestamp="1612803153069">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="345" key="GridCell.Tab.1.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524087507" />
-    <state width="2517" height="345" key="GridCell.Tab.1.left" timestamp="1612524087507">
+    <state width="2517" height="544" key="GridCell.Tab.1.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612803153069" />
+    <state width="2517" height="544" key="GridCell.Tab.1.left" timestamp="1612803153069">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="345" key="GridCell.Tab.1.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524087507" />
-    <state width="2517" height="345" key="GridCell.Tab.1.right" timestamp="1612524087507">
+    <state width="2517" height="544" key="GridCell.Tab.1.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612803153069" />
+    <state width="2517" height="544" key="GridCell.Tab.1.right" timestamp="1612803153069">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="345" key="GridCell.Tab.1.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524087507" />
-    <state x="908" y="209" key="SettingsEditor" timestamp="1612454539327">
+    <state width="2517" height="544" key="GridCell.Tab.1.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612803153069" />
+    <state x="908" y="209" key="SettingsEditor" timestamp="1612802783158">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="908" y="209" key="SettingsEditor/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612454539327" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612477708427">
+    <state x="908" y="209" key="SettingsEditor/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612802783158" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612524198933">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-897" y="194" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@-1360.0.1360.728" timestamp="1612030837457" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612477708427" />
-    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612450532519">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524198933" />
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612785268631">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612450532519" />
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612785268631" />
     <state x="818" y="436" width="924" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611786395366">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

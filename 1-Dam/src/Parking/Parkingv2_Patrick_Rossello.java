@@ -1,18 +1,20 @@
 package Parking;
-/*
-    Made by     PatrickSys
-    PACKAGE     Parking
-    Date        22/01/2021
-*/
 
-import java.io.*;
+/************************************************************************
+ Made by        PatrickSys
+ Date           05/02/2021
+ Package        Parking
+ Version        2.0
+ Description: Review of the Parking, cleansing up exceptions and some bugs.
+ ************************************************************************/
+
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import java.io.*;
 
 
-
-public class Parking_Patrick_Rossello {
+public class Parkingv2_Patrick_Rossello {
 
 
     /**
@@ -33,7 +35,7 @@ public class Parking_Patrick_Rossello {
     /**
      *Constructor
      */
-    public Parking_Patrick_Rossello(int places_no_discapacitats, int places_discapacitats) {
+    public Parkingv2_Patrick_Rossello(int places_no_discapacitats, int places_discapacitats) {
 
 
         this.places_discapacitats = places_discapacitats;
@@ -65,7 +67,7 @@ public class Parking_Patrick_Rossello {
 
 
 
-            try {
+        try {
 
             FileReader fr = new FileReader(path);
             BufferedReader br = new BufferedReader(fr);
@@ -118,10 +120,10 @@ public class Parking_Patrick_Rossello {
                 }
             }
 
-            }catch (Exception e) {
-                throw new Exception("ALERTA =====> Fitxer incorrecte o inexistent.");
-            }
+        }catch (Exception e) {
+            throw new Exception("ALERTA =====> Fitxer incorrecte o inexistent.");
         }
+    }
 
 
     /**
@@ -145,31 +147,31 @@ public class Parking_Patrick_Rossello {
         }
 
 
-         if (places_no_discapacitats_lliures == 0){ //Si no hi ha places lliures de no discapacitats, no entra al parking, ni encara que sigui un "garrulo"
+        if (places_no_discapacitats_lliures == 0){ //Si no hi ha places lliures de no discapacitats, no entra al parking, ni encara que sigui un "garrulo"
             throw new Exception("ALERTA =====> Parking per no discapacitats ple.");
         }
 
-            if (Math.random() * 10 > 7 && this.places_discapacitats_lliures > 0) {  //probabilitat de que un cotxe no discapacitat sigui un garrulo
-                matriculesDiscapacitats.add(matricula);
-                this.places_discapacitats_lliures--;
-                throw new Exception("ALERTA =====> Garrulo detected!!! Ha aparcat a la plaça: " + matriculesDiscapacitats.indexOf(matricula));
+        if (Math.random() * 10 > 7 && this.places_discapacitats_lliures > 0) {  //probabilitat de que un cotxe no discapacitat sigui un garrulo
+            matriculesDiscapacitats.add(matricula);
+            this.places_discapacitats_lliures--;
+            throw new Exception("ALERTA =====> Garrulo detected!!! Ha aparcat a la plaça: " + matriculesDiscapacitats.indexOf(matricula));
 
-            }
+        }
 
 
-            //Si no s'ha llençat cap excepció el cotxe de no discapacitat entra al parking
-            //el cotxe mira si primer hi ha una plaça "buida" d'un cotxe que hagi partit
-             else if(comprovarbuit(TipusPlacesParking.No_Discapacitat)>=0){
-                matriculesNoDiscapacitats.set(comprovarbuit(TipusPlacesParking.No_Discapacitat),matricula );
-                this.places_no_discapacitats_lliures--;
-            }
+        //Si no s'ha llençat cap excepció el cotxe de no discapacitat entra al parking
+        //el cotxe mira si primer hi ha una plaça "buida" d'un cotxe que hagi partit
+        else if(comprovarbuit(TipusPlacesParking.No_Discapacitat)>=0){
+            matriculesNoDiscapacitats.set(comprovarbuit(TipusPlacesParking.No_Discapacitat),matricula );
+            this.places_no_discapacitats_lliures--;
+        }
 
-             //si no en troba, entra a la primera lliure
-            else {
-                matriculesNoDiscapacitats.add(matricula);
-                this.places_no_discapacitats_lliures--;
-            }
-            //si la ocupació supera el 85%, avisa
+        //si no en troba, entra a la primera lliure
+        else {
+            matriculesNoDiscapacitats.add(matricula);
+            this.places_no_discapacitats_lliures--;
+        }
+        //si la ocupació supera el 85%, avisa
         if (getPlacesOcupades(TipusPlacesParking.No_Discapacitat) > places_no_discapacitats * 85 / 100) {
             throw new Exception("ALERTA =====> Ocupació de places per no discapacitats supera el 85%.");
 
@@ -203,8 +205,8 @@ public class Parking_Patrick_Rossello {
 
         //Si ambdós parkings estan plens, directament no pot entrar
         else if (this.places_discapacitats_lliures == 0 && this.places_no_discapacitats_lliures==0) {
-                throw new Exception("ALERTA =====> Parking per discapacitats ple.");
-            }
+            throw new Exception("ALERTA =====> Parking per discapacitats ple.");
+        }
 
         //Intentam primer que un cotxe discapacitat entri al parking de discapacitats
         else if (places_discapacitats_lliures>0) {
@@ -225,8 +227,8 @@ public class Parking_Patrick_Rossello {
             //Si l'ocupació excedeix el 85% s'avisarà però el cotxe discapacitat entrarà igualment
             if (getPlacesOcupades(TipusPlacesParking.Discapacitat) > places_discapacitats * 85 / 100) {
 
-                    throw new Exception("ALERTA =====> Ocupació de places per discapacitats supera el 85%.");
-                }
+                throw new Exception("ALERTA =====> Ocupació de places per discapacitats supera el 85%.");
+            }
             return matriculesDiscapacitats.indexOf(matricula);
 
         }
@@ -235,22 +237,22 @@ public class Parking_Patrick_Rossello {
         //bloc de codi que intenta que un cotxe discapacitat entri al parking de no discapacitats si s'han exclòs les altres opcions
         else {
 
-                //comprova buit d'una plaça lliure
-                 if (comprovarbuit(TipusPlacesParking.No_Discapacitat) >= 0) {
-                     this.places_no_discapacitats_lliures--;
-                     matriculesNoDiscapacitats.set(comprovarbuit(TipusPlacesParking.No_Discapacitat), matricula);
+            //comprova buit d'una plaça lliure
+            if (comprovarbuit(TipusPlacesParking.No_Discapacitat) >= 0) {
+                this.places_no_discapacitats_lliures--;
+                matriculesNoDiscapacitats.set(comprovarbuit(TipusPlacesParking.No_Discapacitat), matricula);
 
-                 }
+            }
 
-                 //Si simplement hi ha una plaça lliure, s'hi suma a la primera posició buida
-                   else{
-                     this.places_no_discapacitats_lliures--;
-                       matriculesNoDiscapacitats.add(matricula);
+            //Si simplement hi ha una plaça lliure, s'hi suma a la primera posició buida
+            else{
+                this.places_no_discapacitats_lliures--;
+                matriculesNoDiscapacitats.add(matricula);
 
-                   }
-                     throw new Exception("ALERTA =====> Parking per discapacitats ple. Ha ocupat la plaça normal num: " +matriculesNoDiscapacitats.indexOf(matricula));
+            }
+            throw new Exception("ALERTA =====> Parking per discapacitats ple. Ha ocupat la plaça normal num: " +matriculesNoDiscapacitats.indexOf(matricula));
 
-                     }
+        }
 
     }
 
@@ -353,7 +355,7 @@ public class Parking_Patrick_Rossello {
             for (int i = 0; i < matriculesDiscapacitats.size(); i++) {
 
                 if (matriculesDiscapacitats.get(i).isBlank()) {
-                     buit=i;
+                    buit=i;
                 }
             }
         }

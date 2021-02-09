@@ -1,12 +1,11 @@
 package LaMevaEstanteria;
-//************************************************************************
-//  Made by        PatrickSys
-//  Date           04/02/2021
-//  Package        LaMevaEstanteria
-//
-// Description 
-//************************************************************************
-
+/************************************************************************
+ Made by        PatrickSys
+ Date           04/02/2021
+ Package        LamevaEstanteria
+ Version        1.0
+ Description:   Book class
+ ************************************************************************/
 
 public class Book {
 

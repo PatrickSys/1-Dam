@@ -6,6 +6,8 @@ package Parking;
     Date        23/01/2021
  */
 
+
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class ParkingTest_Patrick_Rossello {
@@ -14,7 +16,7 @@ public class ParkingTest_Patrick_Rossello {
 
     public static void main(String[] args) {
 
-        Parking_Patrick_Rossello parking= new Parking_Patrick_Rossello(3,3 );
+        Parking_Joshua_Mas parking= new Parking_Joshua_Mas(7,7);
 
         try{ //Si li passam un fitxer com a paràmetre el llegirà
         if(args.length>0) parking.llegirMatricules(args[0]);
@@ -33,9 +35,17 @@ public class ParkingTest_Patrick_Rossello {
        do {
 
            try {
-               System.out.println(parking.getPlacesOcupades(Parking_Patrick_Rossello.TipusPlacesParking.No_Discapacitat)+ " " +parking.getPlacesOcupades(Parking_Patrick_Rossello.TipusPlacesParking.Discapacitat) );
-               System.out.println(parking.getPlacesLliures(Parking_Patrick_Rossello.TipusPlacesParking.No_Discapacitat)+ " " +parking.getPlacesLliures(Parking_Patrick_Rossello.TipusPlacesParking.Discapacitat));
-               System.out.println(parking.matriculesNoDiscapacitats);
+
+               System.out.println(parking.getPlacesLliures(Parking_Joshua_Mas.TipusPlacesParking.No_Discapacitat) +"noD" + parking.getPlacesOcupades(Parking_Joshua_Mas.TipusPlacesParking.Discapacitat));
+               for(int i=0; i<parking.placesNoDisc.length; i++){
+                   System.out.println(parking.placesNoDisc[i] + " No Disc");
+               }
+               for(int i=0; i<parking.placesDisc.length; i++){
+                   System.out.println(parking.placesDisc[i] + " Disc");
+               }
+               //System.out.println(parking.getPlacesOcupades(Parking_Patrick_Rossello.TipusPlacesParking.No_Discapacitat)+ " " +parking.getPlacesOcupades(Parking_Patrick_Rossello.TipusPlacesParking.Discapacitat) );
+               //System.out.println(parking.getPlacesLliures(Parking_Patrick_Rossello.TipusPlacesParking.No_Discapacitat)+ " " +parking.getPlacesLliures(Parking_Patrick_Rossello.TipusPlacesParking.Discapacitat));
+               //System.out.println(parking.matriculesNoDiscapacitats + " " + parking.matriculesDiscapacitats);
 
                System.out.println("\n---Administració del parking---\n");
                System.out.println("1. Omplir parking a partir del fitxer");
@@ -73,7 +83,7 @@ public class ParkingTest_Patrick_Rossello {
                    case 5 -> {
                        System.out.println("Introdueix la matricula de discapacitat: ");
                        matricula = scanner.nextLine();
-                       parking.surtCotxeDiscapacitat(matricula);
+                       parking.surtCotxeDiscapacitats(matricula);
                    }
                    case 6 -> {
                        System.out.println("Introdueix el path: ");
