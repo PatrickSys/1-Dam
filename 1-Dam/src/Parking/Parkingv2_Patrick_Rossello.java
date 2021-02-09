@@ -277,7 +277,7 @@ public class Parkingv2_Patrick_Rossello {
      * Si el cotxe està al parking de discapacitats, elimina la matricula i augmenta les places lliures
      * @param matricula la matricula a comprovar si està al parking i eliminar si hi és
      */
-    public void surtCotxeDiscapacitat(String matricula) throws Exception {
+    public void surtCotxeDiscapacitats(String matricula) throws Exception {
         if (matriculesDiscapacitats.contains(matricula)) {
             this.matriculesDiscapacitats.set(matriculesDiscapacitats.indexOf(matricula)," ");
             this.places_discapacitats_lliures++;

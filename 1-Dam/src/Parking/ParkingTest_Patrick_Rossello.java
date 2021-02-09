@@ -16,7 +16,7 @@ public class ParkingTest_Patrick_Rossello {
 
     public static void main(String[] args) {
 
-        Parking_Joshua_Mas parking= new Parking_Joshua_Mas(7,7);
+        Parkingv2_Patrick_Rossello parking= new Parkingv2_Patrick_Rossello(7,7);
 
         try{ //Si li passam un fitxer com a paràmetre el llegirà
         if(args.length>0) parking.llegirMatricules(args[0]);
@@ -36,13 +36,14 @@ public class ParkingTest_Patrick_Rossello {
 
            try {
 
-               System.out.println(parking.getPlacesLliures(Parking_Joshua_Mas.TipusPlacesParking.No_Discapacitat) +"noD" + parking.getPlacesOcupades(Parking_Joshua_Mas.TipusPlacesParking.Discapacitat));
+               /*System.out.println(parking.getPlacesLliures(Parking_Joshua_Mas.TipusPlacesParking.No_Discapacitat) +"noD" + parking.getPlacesOcupades(Parking_Joshua_Mas.TipusPlacesParking.Discapacitat));
                for(int i=0; i<parking.placesNoDisc.length; i++){
                    System.out.println(parking.placesNoDisc[i] + " No Disc");
                }
                for(int i=0; i<parking.placesDisc.length; i++){
                    System.out.println(parking.placesDisc[i] + " Disc");
-               }
+               }*/
+
                //System.out.println(parking.getPlacesOcupades(Parking_Patrick_Rossello.TipusPlacesParking.No_Discapacitat)+ " " +parking.getPlacesOcupades(Parking_Patrick_Rossello.TipusPlacesParking.Discapacitat) );
                //System.out.println(parking.getPlacesLliures(Parking_Patrick_Rossello.TipusPlacesParking.No_Discapacitat)+ " " +parking.getPlacesLliures(Parking_Patrick_Rossello.TipusPlacesParking.Discapacitat));
                //System.out.println(parking.matriculesNoDiscapacitats + " " + parking.matriculesDiscapacitats);
