@@ -3,13 +3,12 @@ package Parking;
     Made by     PatrickSys
     PACKAGE     Parking
     Date        22/01/2021
-*/
+ */
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-
+import java.io.*;
 
 
 public class Parking_Patrick_Rossello {
@@ -48,6 +47,7 @@ public class Parking_Patrick_Rossello {
      * Llegeix matrícules per a omplir el parking a partir d'un arxiu
      * Comprova que el fitxer existeixi, i que les matrícules estiguin en el format correcte
      * @param path ruta del fitxer a llegir
+     * @throws FileNotFoundException si el fitxer
      */
     public void llegirMatricules(String path) throws Exception {
 
@@ -56,24 +56,25 @@ public class Parking_Patrick_Rossello {
         String matricula;
         String linea;
 
+
+
         //Crea instància fitxer per a verificar que existeixi i que sigui llegible
-        File fitxer = new File(path);
+        try {
 
-        if (!fitxer.exists() || !fitxer.canRead()) {
-            throw new Exception("ALERTA =====> Fitxer incorrecte o inexistent.");  //Si la ruta no es pot accedir, llença la excepció
-        }
+            File fitxer = new File(path);
 
 
+            if (!fitxer.exists() || !fitxer.canRead()) {
+                throw new FileNotFoundException("ALERTA =====> Fitxer incorrecte o inexistent.");  //Si la ruta no es pot accedir, llença la excepció
+            }
 
-            try {
 
             FileReader fr = new FileReader(path);
             BufferedReader br = new BufferedReader(fr);
             linea=br.readLine(); //assignam a linea la proxima linea de l'arxiu
 
             //Llegeix l'arxiu especificat i el converteix a un String
-            while (linea != null) {
-
+            while (linea != null) {     //mentres la linea no sigui nula a:
 
                 Matcher m = p.matcher(linea);
 
@@ -82,15 +83,15 @@ public class Parking_Patrick_Rossello {
                 try {
 
                     if (!m.matches()) { //si la matricula llegida no compleix el patró, llença excepció i seguim llegint
-                        throw new Exception("ALERTA =====> Matricula incorrecte.");
+                        throw new IllegalArgumentException("ALERTA =====> Matricula incorrecta.");
                     }
 
                     matricula = linea;
                     matriculesLlegides.append(matricula.replace("null", "").replace(" ", "")); //agrupam totes les linies llegides a un string, reemplaçant valors null i linees buides
                     linea=br.readLine();
 
-                }catch(Exception e){ //Si una matricula és incorrecte, agafam l'excepció i passam a la seguent linea
-                    e.printStackTrace();
+                }catch(IllegalArgumentException i){ //Si una matricula és incorrecte, agafam l'excepció i passam a la seguent linea
+                    i.printStackTrace();
                     linea=br.readLine();
                 }
 
@@ -102,26 +103,18 @@ public class Parking_Patrick_Rossello {
                 matricula = matriculesLlegides.substring(a, a + 7);
 
                 //S'omplirà el parking aleatòriament
-                if(Math.random()*10>6){
-                    try {
-                        entraCotxeDiscapacitat(matricula);
-                    }catch (Exception e){
-                        e.printStackTrace();
-                    }
+                if(Math.random()*10>7){
+                    entraCotxeDiscapacitat(matricula);
                 }
                 else{
-                    try {
-                        entraCotxe(matricula);
-                    }catch (Exception e){
-                        e.printStackTrace();
-                    }
+                    entraCotxe(matricula);
                 }
             }
 
-            }catch (Exception e) {
-                throw new Exception("ALERTA =====> Fitxer incorrecte o inexistent.");
-            }
+        }catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
+    }
 
 
     /**
@@ -141,39 +134,37 @@ public class Parking_Patrick_Rossello {
         }
 
         else if (!m.matches())  {  //si el patró no es segueix, llança excepció i el cotxe no entra
-            throw new Exception("ALERTA =====> Matrícula incorrecte.");
+            throw new IllegalArgumentException("ALERTA =====> Matrícula incorrecte.");
         }
 
 
-         if (places_no_discapacitats_lliures == 0){ //Si no hi ha places lliures de no discapacitats, no entra al parking, ni encara que sigui un "garrulo"
+        if (places_no_discapacitats_lliures == 0){ //Si no hi ha places lliures de no discapacitats, no entra al parking, ni encara que sigui un "garrulo"
             throw new Exception("ALERTA =====> Parking per no discapacitats ple.");
         }
 
-            if (Math.random() * 10 > 7 && this.places_discapacitats_lliures > 0) {  //probabilitat de que un cotxe no discapacitat sigui un garrulo
-                matriculesDiscapacitats.add(matricula);
-                this.places_discapacitats_lliures--;
-                throw new Exception("ALERTA =====> Garrulo detected!!! Ha aparcat a la plaça: " + matriculesDiscapacitats.indexOf(matricula));
+        if (Math.random() * 10 > 8 && this.places_discapacitats_lliures > 0) try{  //probabilitat de que un cotxe no discapacitat sigui un garrulo
+            matriculesDiscapacitats.add(matricula);
+            this.places_discapacitats_lliures--;
+            throw new Exception("ALERTA =====> Garrulo detected!!! Ha aparcat a la plaça: " + matriculesDiscapacitats.indexOf(matricula));
 
-            }
-
-
-            //Si no s'ha llençat cap excepció el cotxe de no discapacitat entra al parking
-            //el cotxe mira si primer hi ha una plaça "buida" d'un cotxe que hagi partit
-             else if(comprovarbuit(TipusPlacesParking.No_Discapacitat)>=0){
-                matriculesNoDiscapacitats.set(comprovarbuit(TipusPlacesParking.No_Discapacitat),matricula );
-                this.places_no_discapacitats_lliures--;
-            }
-
-             //si no en troba, entra a la primera lliure
-            else {
-                matriculesNoDiscapacitats.add(matricula);
-                this.places_no_discapacitats_lliures--;
-            }
-            //si la ocupació supera el 85%, avisa
-        if (getPlacesOcupades(TipusPlacesParking.No_Discapacitat) > places_no_discapacitats * 85 / 100) {
-            throw new Exception("ALERTA =====> Ocupació de places per no discapacitats supera el 85%.");
-
+        }catch(Exception e){ //agafam l'excepció ja que no volem que el mètode acabi aqui
+            e.printStackTrace();
         }
+
+
+            //Si no s'ha llençat cap excepció el cotxe de no discapacitat entra al parking, afegint aleatorietat entre ocupar una plaça "buida"
+            //(d'un cotxe que hagi partit), i ocupar la primera plaça "nova"
+        else if(comprovarbuit(TipusPlacesParking.No_Discapacitat)>=0 && Math.random()*10>5){
+
+            matriculesNoDiscapacitats.set(comprovarbuit(TipusPlacesParking.No_Discapacitat),matricula );
+        }
+
+
+        else {
+            matriculesNoDiscapacitats.add(matricula);
+            this.places_no_discapacitats_lliures--;
+        }
+
 
         return matriculesNoDiscapacitats.indexOf(matricula);
 
@@ -192,7 +183,7 @@ public class Parking_Patrick_Rossello {
 
         Matcher m = p.matcher(matricula); // Si la matrícula no respecta el pattern, llençam l'excepció
         if (!m.matches()) {
-            throw new Exception("ALERTA =====> Matrícula incorrecte.");
+            throw new IllegalArgumentException("ALERTA =====> Matrícula incorrecte.");
         }
 
         //si ja esta al parking, no pot entrar
@@ -202,16 +193,16 @@ public class Parking_Patrick_Rossello {
 
 
         //Si ambdós parkings estan plens, directament no pot entrar
-        else if (this.places_discapacitats_lliures == 0 && this.places_no_discapacitats_lliures==0) {
-                throw new Exception("ALERTA =====> Parking per discapacitats ple.");
-            }
+        else if (this.places_discapacitats_lliures == 0&& this.places_no_discapacitats_lliures==0) {
+            throw new Exception("ALERTA =====> Parking per discapacitats ple.");
+        }
 
         //Intentam primer que un cotxe discapacitat entri al parking de discapacitats
         else if (places_discapacitats_lliures>0) {
 
 
-            //Si hi ha algun buit de un cotxe que ha partit, el cotxe s'hi fica
-            if(comprovarbuit(TipusPlacesParking.Discapacitat)>=0 ) {
+            //Si hi ha algun buit de un cotxe que ha partit, el cotxe s'hi pot ficar, aleatòriament entre ocupar una plaça buida i una "nova"
+            if(comprovarbuit(TipusPlacesParking.Discapacitat)>=0 &&Math.random()*10>5) {
                 matriculesDiscapacitats.set(comprovarbuit(TipusPlacesParking.Discapacitat), matricula);
             }
 
@@ -223,35 +214,49 @@ public class Parking_Patrick_Rossello {
 
 
             //Si l'ocupació excedeix el 85% s'avisarà però el cotxe discapacitat entrarà igualment
-            if (getPlacesOcupades(TipusPlacesParking.Discapacitat) > places_discapacitats * 85 / 100) {
+            if (getPlacesOcupades(TipusPlacesParking.Discapacitat) > places_discapacitats * 85 / 100) try{
+                throw new Exception("ALERTA =====> Ocupació de places per discapacitats supera el 85%.");
 
-                    throw new Exception("ALERTA =====> Ocupació de places per discapacitats supera el 85%.");
-                }
+            }catch (Exception e){
+                e.printStackTrace();
+            }
             return matriculesDiscapacitats.indexOf(matricula);
-
         }
-
 
         //bloc de codi que intenta que un cotxe discapacitat entri al parking de no discapacitats si s'han exclòs les altres opcions
         else {
 
-                //comprova buit d'una plaça lliure
-                 if (comprovarbuit(TipusPlacesParking.No_Discapacitat) >= 0) {
-                     this.places_no_discapacitats_lliures--;
-                     matriculesNoDiscapacitats.set(comprovarbuit(TipusPlacesParking.No_Discapacitat), matricula);
+            //Excepció: Si el cotxe ja és al parking de No discapacitats, no entra
+            if (matriculesNoDiscapacitats.contains(matricula))  {
 
-                 }
+                throw new Exception("El cotxe ja està al parking. No pot entrar.");
+            }
 
-                 //Si simplement hi ha una plaça lliure, s'hi suma a la primera posició buida
-                   else{
-                     this.places_no_discapacitats_lliures--;
-                       matriculesNoDiscapacitats.add(matricula);
+            //comprovam que el cotxe no estigui ja al parking de no discapacitats
+            else if(!matriculesNoDiscapacitats.contains(matricula)) try {
+                throw new Exception("ALERTA =====> Parking per discapacitats ple. Ha ocupat la plaça normal num:");
+            }
+            catch(Exception e){
 
-                   }
-                     throw new Exception("ALERTA =====> Parking per discapacitats ple. Ha ocupat la plaça normal num: " +matriculesNoDiscapacitats.indexOf(matricula));
 
-                     }
+                //miram si hi ha alguna plaça buida d'un cotxe que hagi partit, però el cotxe hi entrarà aleatoriament
+                if (comprovarbuit(TipusPlacesParking.No_Discapacitat) >= 0 && Math.random() * 10 > 5) {
 
+                    matriculesNoDiscapacitats.set(comprovarbuit(TipusPlacesParking.No_Discapacitat), matricula);
+
+
+                    //Si simplement hi ha una plaça lliure, s'hi suma a la primera posició buida
+                } else if (places_no_discapacitats_lliures > 0) {
+                    matriculesNoDiscapacitats.add(matricula);
+
+                }
+
+                this.places_no_discapacitats_lliures--;
+                System.err.println(e.getMessage() + matriculesNoDiscapacitats.indexOf(matricula)); //Si troba plaça al parking de no discapacitats, hi entra i ho avisam "excepció"
+
+            }
+        }
+        return matriculesDiscapacitats.indexOf(matricula) ;
     }
 
 
@@ -267,7 +272,7 @@ public class Parking_Patrick_Rossello {
             this.matriculesNoDiscapacitats.set(matriculesNoDiscapacitats.indexOf(matricula)," ");
             this.places_no_discapacitats_lliures++;
         }
-        else throw new Exception("El cotxe no és al parking ");
+        else throw new Exception("El coche no és al parking ");
     }
 
 
@@ -280,7 +285,7 @@ public class Parking_Patrick_Rossello {
             this.matriculesDiscapacitats.set(matriculesDiscapacitats.indexOf(matricula)," ");
             this.places_discapacitats_lliures++;
         }
-        else throw new Exception("El cotxe no és al parking");
+        else throw new Exception("El coche no és al parking");
     }
 
 
@@ -312,30 +317,32 @@ public class Parking_Patrick_Rossello {
      * @throws Exception si el path està en blanc
      */
     public void guardarMatricules(String path) throws Exception {
-
         try {
             FileWriter fw = new FileWriter(path);
             BufferedWriter bw = new BufferedWriter(fw);
             ArrayList<String> totalMatricules = new ArrayList<>();
 
+            if (path.isBlank())
+                throw new FileNotFoundException("ALERTA =====> Fitxer incorrecte o inexistent."); //Si el path especificat està en blanc, llença excepció
 
             //Suma totes les matrícules a un únic ArrayList
             totalMatricules.addAll(matriculesDiscapacitats);
             totalMatricules.addAll(matriculesNoDiscapacitats);
 
-
             //Converteix les matrícules a un String únic
             String matricules = (totalMatricules.toString().replace("[", "").replace("]", "").replace(",", "").replace(" ", ""));
 
+
             //Escriu una matrícula linea per linea
-            for (int i = 0; i < matricules.length() / 7; i++) {
-                int a = (i * 7);
+            for (int i = 0; i < totalMatricules.size(); i++) {
+                int a = i * 7;
                 bw.write(matricules.substring(a, a + 7) + "\n");
             }
             bw.close();
 
-        }catch (Exception e){
-            throw new Exception("ALERTA =====> Fitxer incorrecte o inexistent.");
+        }catch (FileNotFoundException f){
+            throw new FileNotFoundException("ALERTA =====> Fitxer incorrecte o inexistent.");
+
         }
     }
 
@@ -353,7 +360,7 @@ public class Parking_Patrick_Rossello {
             for (int i = 0; i < matriculesDiscapacitats.size(); i++) {
 
                 if (matriculesDiscapacitats.get(i).isBlank()) {
-                     buit=i;
+                    buit=i;
                 }
             }
         }
@@ -372,5 +379,4 @@ public class Parking_Patrick_Rossello {
 
 
 }
-
 

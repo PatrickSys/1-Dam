@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="Done">
-      <change afterPath="$PROJECT_DIR$/1-Dam/src/Parking/Parkingv2_Patrick_Rossello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/Parking/CorrecióParking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bingo/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Bingo/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Rack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/rackMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/rackMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/Parking_Patrick_Rossello.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Parking/Parking_Patrick_Rossello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/Parkingv2_Patrick_Rossello.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Parking/Parkingv3_Patrick_Rossello.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +65,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.ParkingTest_Patrick_Rossello">
-    <configuration name="ArrayListSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bucles.ArrayListSort" />
+    <configuration name="CorrecióParking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Parking.CorrecióParking" />
       <module name="1-Dam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Bucles.*" />
+          <option name="PATTERN" value="Parking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,13 +124,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ParkingTest_Patrick_Rossello" />
+        <item itemvalue="Application.CorrecióParking" />
         <item itemvalue="Application.rackMain" />
         <item itemvalue="Application.MainBingo" />
         <item itemvalue="Application.proves" />
-        <item itemvalue="Application.ArrayListSort" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +172,8 @@
       <workItem from="1612615153096" duration="658000" />
       <workItem from="1612785264467" duration="17336000" />
       <workItem from="1612807546202" duration="5690000" />
+      <workItem from="1612906330489" duration="341000" />
+      <workItem from="1612907418295" duration="5420000" />
     </task>
     <task id="LOCAL-00001" summary="YY">
       <created>1611786207209</created>
@@ -286,22 +295,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="441" key="FileChooserDialogImpl/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785621928" />
-    <state width="2517" height="595" key="GridCell.Tab.0.bottom" timestamp="1612875431205">
+    <state width="2517" height="541" key="GridCell.Tab.0.bottom" timestamp="1612913857831">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="595" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612875431205" />
-    <state width="2517" height="595" key="GridCell.Tab.0.center" timestamp="1612875431204">
+    <state width="2517" height="541" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612913857831" />
+    <state width="2517" height="541" key="GridCell.Tab.0.center" timestamp="1612913857831">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="595" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612875431204" />
-    <state width="2517" height="595" key="GridCell.Tab.0.left" timestamp="1612875431204">
+    <state width="2517" height="541" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612913857831" />
+    <state width="2517" height="541" key="GridCell.Tab.0.left" timestamp="1612913857831">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="595" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612875431204" />
-    <state width="2517" height="595" key="GridCell.Tab.0.right" timestamp="1612875431205">
+    <state width="2517" height="541" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612913857831" />
+    <state width="2517" height="541" key="GridCell.Tab.0.right" timestamp="1612913857831">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="595" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612875431205" />
+    <state width="2517" height="541" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612913857831" />
     <state width="2517" height="544" key="GridCell.Tab.1.bottom" timestamp="1612803153069">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
