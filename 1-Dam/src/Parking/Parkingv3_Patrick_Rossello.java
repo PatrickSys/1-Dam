@@ -2,10 +2,10 @@ package Parking;
 
 /************************************************************************
  Made by        PatrickSys
- Date           05/02/2021
+ Date           09/02/2021
  Package        Parking
- Version        2.0
- Description: Review of the Parking, cleansing up exceptions and some bugs.
+ Version        3.0
+ Description: Final review of the parking.
  ************************************************************************/
 
 import java.util.ArrayList;
