@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="Done">
-      <change afterPath="$PROJECT_DIR$/1-Dam/src/Parking/CorrecióParking.java" afterDir="false" />
+    <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/Parkingv2_Patrick_Rossello.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Parking/Parkingv3_Patrick_Rossello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Cinema/Cinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,91 +56,30 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bitaz\IdeaProjects\SideProjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ParkingTest_Patrick_Rossello">
-    <configuration name="CorrecióParking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Parking.CorrecióParking" />
+  <component name="RunManager">
+    <configuration name="MainCinema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cinema.MainCinema" />
       <module name="1-Dam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Parking.*" />
+          <option name="PATTERN" value="Cinema.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainBingo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bingo.MainBingo" />
-      <module name="1-Dam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Bingo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParkingTest_Patrick_Rossello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Parking.ParkingTest_Patrick_Rossello" />
-      <module name="1-Dam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Parking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="proves" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="proves" />
-      <module name="1-Dam" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rackMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LaMevaEstanteria.rackMain" />
-      <module name="1-Dam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LaMevaEstanteria.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ParkingTest_Patrick_Rossello" />
-        <item itemvalue="Application.CorrecióParking" />
-        <item itemvalue="Application.rackMain" />
-        <item itemvalue="Application.MainBingo" />
-        <item itemvalue="Application.proves" />
+        <item itemvalue="Application.MainCinema" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +111,15 @@
       <workItem from="1612785264467" duration="17336000" />
       <workItem from="1612807546202" duration="5690000" />
       <workItem from="1612906330489" duration="341000" />
-      <workItem from="1612907418295" duration="5420000" />
+      <workItem from="1612907418295" duration="5857000" />
+      <workItem from="1612916153746" duration="69000" />
+      <workItem from="1612916314459" duration="9000" />
+      <workItem from="1612966505895" duration="1010000" />
+      <workItem from="1612968544874" duration="139000" />
+      <workItem from="1612968807937" duration="194000" />
+      <workItem from="1612983554298" duration="367000" />
+      <workItem from="1613305577696" duration="3436000" />
+      <workItem from="1613312525416" duration="139000" />
     </task>
     <task id="LOCAL-00001" summary="YY">
       <created>1611786207209</created>
@@ -238,7 +184,28 @@
       <option name="project" value="LOCAL" />
       <updated>1612524197256</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Parking v3">
+      <created>1612914224276</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612914224276</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Parking v3">
+      <created>1612914269764</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612914269764</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Header Updated">
+      <created>1612914316159</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612914316159</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,17 +230,19 @@
     <MESSAGE value="Bingo Done" />
     <MESSAGE value="Stuck" />
     <MESSAGE value="Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done" />
+    <MESSAGE value="Parking v3" />
+    <MESSAGE value="Header Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Header Updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1611785623327">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785623327" />
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612452749165">
+    <state x="734" y="355" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613305802252">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612452749165" />
+    <state x="734" y="355" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613305802252" />
     <state x="1085" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1612452737525">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -295,22 +264,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="441" key="FileChooserDialogImpl/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785621928" />
-    <state width="2517" height="541" key="GridCell.Tab.0.bottom" timestamp="1612913857831">
+    <state width="2517" height="238" key="GridCell.Tab.0.bottom" timestamp="1613312664982">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="541" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612913857831" />
-    <state width="2517" height="541" key="GridCell.Tab.0.center" timestamp="1612913857831">
+    <state width="2517" height="238" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613312664982" />
+    <state width="2517" height="238" key="GridCell.Tab.0.center" timestamp="1613312664982">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="541" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612913857831" />
-    <state width="2517" height="541" key="GridCell.Tab.0.left" timestamp="1612913857831">
+    <state width="2517" height="238" key="GridCell.Tab.0.center/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613312664982" />
+    <state width="2517" height="238" key="GridCell.Tab.0.left" timestamp="1613312664982">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="541" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612913857831" />
-    <state width="2517" height="541" key="GridCell.Tab.0.right" timestamp="1612913857831">
+    <state width="2517" height="238" key="GridCell.Tab.0.left/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613312664982" />
+    <state width="2517" height="238" key="GridCell.Tab.0.right" timestamp="1613312664982">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="541" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612913857831" />
+    <state width="2517" height="238" key="GridCell.Tab.0.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613312664982" />
     <state width="2517" height="544" key="GridCell.Tab.1.bottom" timestamp="1612803153069">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -327,15 +296,19 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="544" key="GridCell.Tab.1.right/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612803153069" />
-    <state x="908" y="209" key="SettingsEditor" timestamp="1612802783158">
+    <state x="918" y="461" key="MultipleFileMergeDialog" timestamp="1612914249155">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="908" y="209" key="SettingsEditor/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612802783158" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612524198933">
+    <state x="918" y="461" key="MultipleFileMergeDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612914249155" />
+    <state x="908" y="209" key="SettingsEditor" timestamp="1613306012664">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="908" y="209" key="SettingsEditor/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613306012664" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612914320287">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-897" y="194" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@-1360.0.1360.728" timestamp="1612030837457" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612524198933" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612914320287" />
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612785268631">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

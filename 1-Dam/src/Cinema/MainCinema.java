@@ -24,8 +24,8 @@ public class MainCinema {
         cine1.setCurrentMovie(Frankstein);
 
         //Get Info we want to know
-        System.out.println(cine1.getCinemaInfo());
-        System.out.println(Frankstein.getMovieInfo());
+        //System.out.println(cine1.getCinemaInfo());
+        //System.out.println(Frankstein.getMovieInfo());
 
         //fill the cinema
         cine1.fillCinema(cine1, Frankstein, cine1Seats);

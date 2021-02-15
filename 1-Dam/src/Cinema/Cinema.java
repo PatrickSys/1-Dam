@@ -75,7 +75,7 @@ public class Cinema {
             Spectator spectator = new Spectator();
             boolean sit = false;
 
-            //if none seat is free make isFull true and end the program
+            //if none seat is free make isFull true and ends the program
             if (!seats.contains(0)) {
                 printSeats(seats);
                 isFull = true;
@@ -84,19 +84,20 @@ public class Cinema {
             //if spectator meets requirements
             else if (spectator.getMoney() >= cinema.getTicketPrice() && spectator.getAge() >= movie.getMinAge()) {
 
-                while (!sit) {
+
+                while (!sit){
 
                     //looks for an empty spot randomly then sits on it
-                    for (int i = (int) (Math.random() * cinemaCapacity); i < cinemaCapacity && !sit; i++) {
+                    int randomSeat= (int)(Math.random()*cinemaCapacity);
 
-                        if (seats.get(i) == 0) {
+
+                        if (seats.get(randomSeat) == 0 && Math.random()*10>4) {
                             printSeats(seats);
-                            seats.set(i, 1);
+                            seats.set(randomSeat, 1);
                             sit = true;
                             earnedMoney += ticketPrice;
 
                         }
-                    }
                 }
             }
         }
