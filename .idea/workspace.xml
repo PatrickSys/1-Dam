@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="">
+    <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="Cinema for loop replaced for while">
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/NeveraTest/Nevera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/NeveraTest/NeveraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/NeveraTest/NoSuchItemException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Cinema/Cinema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
     <option name="SCHEME" value="Project" />
@@ -47,23 +49,36 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SideProjects" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="NeveraTest" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bitaz\IdeaProjects\SideProjects" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.NeveraTest">
     <configuration name="MainCinema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cinema.MainCinema" />
       <module name="1-Dam" />
@@ -77,8 +92,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NeveraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="1-Dam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NeveraTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="NeveraTest" />
+      <option name="MAIN_CLASS_NAME" value="NeveraTest.NeveraTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NeveraTest" />
         <item itemvalue="Application.MainCinema" />
       </list>
     </recent_temporary>
@@ -120,6 +162,9 @@
       <workItem from="1612983554298" duration="367000" />
       <workItem from="1613305577696" duration="3436000" />
       <workItem from="1613312525416" duration="139000" />
+      <workItem from="1613394179347" duration="41000" />
+      <workItem from="1613665581310" duration="44000" />
+      <workItem from="1613737934629" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="YY">
       <created>1611786207209</created>
@@ -205,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612914316159</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Cinema for loop replaced for while">
+      <created>1613394207694</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1613394207694</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +284,8 @@
     <MESSAGE value="Done" />
     <MESSAGE value="Parking v3" />
     <MESSAGE value="Header Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Header Updated" />
+    <MESSAGE value="Cinema for loop replaced for while" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cinema for loop replaced for while" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1611785623327">
@@ -260,10 +313,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1027" y="555" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612811612039" />
-    <state x="1060" y="441" key="FileChooserDialogImpl" timestamp="1611785621928">
+    <state x="1060" y="441" key="FileChooserDialogImpl" timestamp="1613738214283">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="441" key="FileChooserDialogImpl/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1611785621928" />
+    <state x="1060" y="441" key="FileChooserDialogImpl/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613738214283" />
     <state width="2517" height="238" key="GridCell.Tab.0.bottom" timestamp="1613312664982">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -300,19 +353,27 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="918" y="461" key="MultipleFileMergeDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612914249155" />
-    <state x="908" y="209" key="SettingsEditor" timestamp="1613306012664">
+    <state x="908" y="209" key="SettingsEditor" timestamp="1613738245890">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="908" y="209" key="SettingsEditor/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613306012664" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612914320287">
+    <state x="908" y="209" key="SettingsEditor/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613738245890" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1613394211317">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-897" y="194" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@-1360.0.1360.728" timestamp="1612030837457" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612914320287" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613394211317" />
+    <state x="1132" y="526" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1613738335732">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1132" y="526" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613738335732" />
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612785268631">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1612785268631" />
+    <state x="1051" y="482" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1613738062521">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1051" y="482" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/-1360.0.1360.728@0.0.2560.1400" timestamp="1613738062521" />
     <state x="818" y="436" width="924" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611786395366">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
