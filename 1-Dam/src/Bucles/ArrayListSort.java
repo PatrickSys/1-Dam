@@ -22,7 +22,6 @@ public class ArrayListSort {
         numbers.add(3);
         numbers.add(1);
 
-
         for (int i=0; i<numbers.size(); i++){
             System.out.println(numbers.get(i));
         }
