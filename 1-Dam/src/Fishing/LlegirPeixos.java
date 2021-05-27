@@ -19,7 +19,8 @@ public class LlegirPeixos {
 
     private Peix llegir(int hashtags) throws IOException {
 
-
+        InputStream is = getClass().getClassLoader().getResourceAsStream("mediterrania.txt");
+        InputStreamReader inputStreamReader = new InputStreamReader(is);
         int dades = inputStreamReader.read();
         int contadorHashtag = 0;
         int contadorPropietats = 0;
