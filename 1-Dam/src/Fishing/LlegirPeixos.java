@@ -30,12 +30,8 @@ public class LlegirPeixos {
 
 
             char charLlegit = (char) dades;
-
             if (charLlegit == '#'){
                 contadorHashtag++;
-                propietat += " ";
-                dades = inputStreamReader.read();
-                continue;
             }
             propietat += charLlegit;
 
