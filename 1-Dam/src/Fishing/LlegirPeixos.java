@@ -1,8 +1,5 @@
 package Fishing;
 
-import CompSim.Software;
-import POO.Parking;
-
 import java.io.*;
 
 /************************************************************************
@@ -17,13 +14,12 @@ public class LlegirPeixos {
 
     public static void main(String[] args) throws IOException {
         LlegirPeixos llegirPeixos = new LlegirPeixos();
-        llegirPeixos.llegirPeixos();
+        llegirPeixos.llegir(5);
     }
 
-    private Peix llegirPeixos() throws IOException {
+    private Peix llegir(int hashtags) throws IOException {
 
-        InputStream is = getClass().getClassLoader().getResourceAsStream("mediterrania.txt");
-        InputStreamReader inputStreamReader = new InputStreamReader(is);
+
         int dades = inputStreamReader.read();
         int contadorHashtag = 0;
         int contadorPropietats = 0;
@@ -31,16 +27,23 @@ public class LlegirPeixos {
 
         while(dades != -1){
 
+
             char charLlegit = (char) dades;
-            if (charLlegit == '#');{
-                contadorPropietats++;
+
+            if (charLlegit == '#'){
+                contadorHashtag++;
+                propietat += " ";
+                dades = inputStreamReader.read();
+                continue;
             }
             propietat += charLlegit;
 
-
-
             dades = inputStreamReader.read();
-            System.out.println(charLlegit + "  és el");
+
+            if(contadorHashtag==hashtags){
+                System.out.println(propietat);
+                propietat="";
+            }
         }
         inputStreamReader .close();
 
