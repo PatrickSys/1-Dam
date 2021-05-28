@@ -16,7 +16,7 @@ public class CorrecióParking {
 
     public static void main(String[] args) {
 
-        Parking_Joshua_Mas parking = new Parking_Joshua_Mas(7, 7);
+        Parkingv3_Patrick_Rossello parking = new Parkingv3_Patrick_Rossello(7, 7);
 
         try {
 
@@ -42,22 +42,20 @@ public class CorrecióParking {
 
 
         }
-        System.out.println(parking.getPlacesLliures(Parking_Joshua_Mas.TipusPlacesParking.Discapacitat) + " lliures discapacitats");
-        System.out.println(parking.getPlacesOcupades(Parking_Joshua_Mas.TipusPlacesParking.Discapacitat) + " Ocupades discapacitats");
-        System.out.println(parking.getPlacesLliures(Parking_Joshua_Mas.TipusPlacesParking.No_Discapacitat) + " lliures no Disc");
-        System.out.println(parking.getPlacesOcupades(Parking_Joshua_Mas.TipusPlacesParking.No_Discapacitat) + " ocupades no Disc");
+        System.out.println(parking.getPlacesLliures(Parkingv3_Patrick_Rossello.TipusPlacesParking.Discapacitat) + " lliures discapacitats");
+        System.out.println(parking.getPlacesOcupades(Parkingv3_Patrick_Rossello.TipusPlacesParking.Discapacitat) + " Ocupades discapacitats");
+        System.out.println(parking.getPlacesLliures(Parkingv3_Patrick_Rossello.TipusPlacesParking.No_Discapacitat) + " lliures no Disc");
+        System.out.println(parking.getPlacesOcupades(Parkingv3_Patrick_Rossello.TipusPlacesParking.No_Discapacitat) + " ocupades no Disc");
 
         System.out.println("matricules:");
-        for (int i = 0; i < parking.getPlacesOcupades(Parking_Joshua_Mas.TipusPlacesParking.No_Discapacitat); i++) {
+        for (int i = 0; i < parking.getPlacesOcupades(Parkingv3_Patrick_Rossello.TipusPlacesParking.No_Discapacitat); i++) {
 
 
-            System.out.println(parking.placesDisc[i] + " No Discapacitats");
 
         }
-        for (int i = 0; i < parking.getPlacesOcupades(Parking_Joshua_Mas.TipusPlacesParking.Discapacitat); i++) {
+        for (int i = 0; i < parking.getPlacesOcupades(Parkingv3_Patrick_Rossello.TipusPlacesParking.Discapacitat); i++) {
 
 
-            System.out.println(parking.placesDisc[i] + " Discapacitats");
 
         }
 
