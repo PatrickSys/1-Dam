@@ -16,8 +16,8 @@ import java.rmi.ServerError;
 
 
 public class Pesca {
-    private final String pathArxius ="1-Dam/arxius/";
-    private final String arxiuUsuaris = new File(pathArxius+"usuaris.txt").getAbsoluteFile().toString();
+    private final String pathArxius ="src/arxius/";
+    private final File arxiuUsuaris = new File(pathArxius+"usuaris.txt").getAbsoluteFile();
     private final int limitHashtagspesquera = 5;
 
     public static void main(String[] args) throws IOException {
@@ -27,6 +27,9 @@ public class Pesca {
         //pesca.demanarPesquera();
     }
 
+    public Pesca(){
+        this.arxiuUsuaris.getParentFile().mkdirs();
+    }
     private String entraDades(String missatge){
         return JOptionPane.showInputDialog(missatge);
     }
@@ -34,11 +37,11 @@ public class Pesca {
     private void altaUsuari() throws IOException {
         String nom = entraDades("Nom");
         if (usuariExisteix(nom)){
-            throw new UserNotFoundException(" L'usuari ja existeix");
+           JOptionPane.showMessageDialog(null, new UserAlreadySignedUpException("Usuari ja donat d'alta").getMessage());
+           return;
         }
         JOptionPane.showMessageDialog(null, "Benvingut " + nom);
         String contrasenya = entraDades("contrasenya");
-
 
         OutputStream outputStream = new FileOutputStream(this.arxiuUsuaris, true);
         afegeixSaltLinea(outputStream);
@@ -71,7 +74,7 @@ public class Pesca {
         String lectura ="";
         while (cursor != -1){
 
-            if(lectura.equalsIgnoreCase(nom)) {
+            if(lectura.equals(nom)) {
                 return true;
             }
             char lletra = (char) cursor;
@@ -94,11 +97,10 @@ public class Pesca {
     }
 
 
-    private String llegirLinia(String arxiu, int limitHashtags) throws IOException {
+    private String llegirLinia(File arxiu, int limitHashtags, int cursorLinia, int contadorHashtags) throws IOException {
         InputStream inputStream = new FileInputStream(arxiu);
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         int dades = inputStreamReader.read();
-        int contadorHashtags = 0;
         String linia = "";
 
         while (dades != -1){
@@ -111,31 +113,33 @@ public class Pesca {
 
                 linia += charLlegit;
                 dades = inputStreamReader.read();
-
-                if(contadorHashtags==limitHashtags){
+            if(contadorHashtags==limitHashtags*(cursorLinia-1)){
+                linia = "";
+            }
+                if(contadorHashtags==limitHashtags*cursorLinia){
                     inputStream.close();
                     return linia;
                 }
 
             }
         inputStream.close();
-        return linia;
+        return null;
     }
 
 
-    private String llegirSubLinia(String linia, int hashtagObjective, int cursorLinia) throws IOException {
+    private String llegirSubLinia(String linia, int hashtagObjective) throws IOException {
      int contadorHashtags = 0;
      String subLinia = "";
         for (char caracter: linia.toCharArray()){
             if(caracter == '#'){
-                caracter = ' ';
                 contadorHashtags++;
+                continue;
+            }
+            if(contadorHashtags == hashtagObjective){
+                return subLinia;
             }
             subLinia += caracter;
 
-            if(contadorHashtags == hashtagObjective*cursorLinia){
-                return subLinia;
-            }
         }
 
         return subLinia;
@@ -143,19 +147,30 @@ public class Pesca {
 
 
     private Boolean usuariExisteix(String nomUsuari) throws IOException {
+        boolean existeix = false;
+
+        if (!this.arxiuUsuaris.exists()){
+            return false;
+
+        }
         String linia;
         int cursorLinia = 0;
-      do{
+        int contadorHashtags = 0;
+
+      do {
           cursorLinia++;
-          linia = llegirLinia(this.arxiuUsuaris, 2);
-          String subLinia = llegirSubLinia(linia, 2, cursorLinia);
-          if (subLinia.equalsIgnoreCase(nomUsuari)){
-              return true;
+          linia = llegirLinia(this.arxiuUsuaris, 3, cursorLinia, contadorHashtags);
+          if(null == linia){
+              return false;
+          }
+          String subLinia = llegirSubLinia(linia, 2);
+          if (subLinia.equals(nomUsuari)){
+              existeix = true;
           }
 
-      } while (null != linia);
+      } while (!existeix);
 
-      return false;
+      return true;
     }
 
 
