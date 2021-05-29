@@ -20,16 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="Cinema for loop replaced for while">
-      <change afterPath="$PROJECT_DIR$/1-Dam/src/Exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-Dam/src/Exceptions/UserAlreadySignedUpException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/resources/florida.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/arxius/florida.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/resources/mediterrania.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/arxius/mediterrania.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/resources/users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Fishing/LlegirPeixos.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Fishing/Peix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Fishing/prueba.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/NeveraTest/NeveraTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/CorrecióParking.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Parking/CorrecióParking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,15 +108,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -191,6 +182,7 @@
       <workItem from="1613394179347" duration="41000" />
       <workItem from="1613665581310" duration="44000" />
       <workItem from="1613737934629" duration="633000" />
+      <workItem from="1622303422293" duration="10847000" />
     </task>
     <task id="LOCAL-00001" summary="YY">
       <created>1611786207209</created>
@@ -320,43 +312,8 @@
           <properties class="java.util.InputMismatchException" package="java.util" />
           <option name="timeStamp" value="10" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java</url>
-          <line>149</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java</url>
-          <line>150</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java</url>
-          <line>151</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java</url>
-          <line>152</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="parking" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
