@@ -13,9 +13,10 @@ import java.io.*;
 
 
 public class Pesca {
-    private final String pathArxius ="1-Dam/arxius/";
-    private final String arxiuUsuaris = new File(pathArxius + "usuaris.txt").getAbsoluteFile().toString();
-    private final String registres = new File(pathArxius + "registres.txt").getAbsoluteFile().toString();
+    private final String arxiusFolder = "resources/arxius/";
+    private final String pathUsuaris = arxiusFolder + "usuaris.txt";
+    private final String arxiuUsuaris = new File(pathUsuaris).getAbsoluteFile().toString();
+    //private final String registres = new File(pathArxius + "registres.txt").getAbsoluteFile().toString();
     private final int hashtagspesquera = 5;
     private final int hashtagsUsuaris = 3;
 
@@ -48,6 +49,7 @@ public class Pesca {
     }
 
     private void altaUsuari() throws IOException, UserAlreadySignedUpException {
+        OutputStream outputStream;
         String nom = entraDades("Nom");
         if (usuariExisteix(nom)){
             throw new UserAlreadySignedUpException("L'usuari ja existeix");
@@ -56,8 +58,13 @@ public class Pesca {
         String contrasenya = entraDades("contrasenya");
 
 
-        OutputStream outputStream = new FileOutputStream(this.arxiuUsuaris, true);
-        afegeixSaltLinea(outputStream);
+        if (llegirLinia(this.arxiuUsuaris, 3, 1).isBlank()){
+            outputStream = new FileOutputStream(this.arxiuUsuaris, false);
+        }
+        else{
+            outputStream = new FileOutputStream(this.arxiuUsuaris, true);
+            afegeixSaltLinea(outputStream);
+        }
         escriuHashtag(outputStream);
         escriuString(nom, outputStream);
         escriuHashtag(outputStream);
@@ -116,37 +123,6 @@ public class Pesca {
             outputStream.write(lletra);
         }
     }
-
-    private Boolean comprovaUsuari(String nom) throws IOException {
-        int limitHashtags = 3;
-        int contadorHashtags = 0;
-        InputStream inputStream = new FileInputStream("usuaris.txt");
-        int cursor =  inputStream.read();
-        String lectura ="";
-        while (cursor != -1){
-
-            if(lectura.equalsIgnoreCase(nom)) {
-                return true;
-            }
-            char lletra = (char) cursor;
-
-            if(contadorHashtags==limitHashtags){
-                lectura = "";
-                contadorHashtags = 0;
-                continue;
-            }
-            lectura += lletra;
-            cursor = inputStream.read();
-
-            if(lletra == '#'){
-                contadorHashtags++;
-            }
-        }
-
-
-    return false;
-    }
-
 
     private String llegirLinia(String arxiu, int limitHashtags, int cursorLinia) throws IOException {
         InputStream inputStream = new FileInputStream(arxiu);
@@ -217,14 +193,14 @@ public class Pesca {
               existeix = true;
           }
 
-      } while (!existeix);
+      } while (!linia.isBlank());
 
       return existeix;
     }
 
 
     private void pescar() throws IOException {
-        String pesquera = this.pathArxius + entraFitxer("On vols pescar?");
+        //String pesquera = this.pathArxius + entraFitxer("On vols pescar?");
         int offset = getPosicioPropietat("nom");
         //llegirArxiu(pesquera, 5, offset);
 
