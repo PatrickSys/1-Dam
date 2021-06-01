@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,10 +22,140 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="Cinema for loop replaced for while">
-      <change afterPath="$PROJECT_DIR$/1-Dam/src/Exceptions/UserAlreadySignedUpException.java" afterDir="false" />
+    <list default="true" id="7626218f-f98e-4176-ac01-f47a8b848a9b" name="Default Changelist" comment="Pesca">
+      <change beforePath="$PROJECT_DIR$/.idea/fileTemplates/includes/File Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fileTemplates/includes/File Header.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/.idea/fileTemplates/includes/File Header.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Bingo/Machine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Bingo/MainBingo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Bingo/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Bucles/ArrayListSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Bucles/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Bucles/Ej12Bucles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Bucles/Ej13Bucles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Bucles/Ej9bucles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Bucles/OrdenarMatrius.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Cinema/Cinema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Cinema/MainCinema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Cinema/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Cinema/Spectator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/CotxeAbstracte.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/CotxeSegonaPart_Patrick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/Cotxe_Patrick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/EstatMotorCotxe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/InterfaceCotxe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/TestCotxeSegonaPart_Patrick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/TestCotxe_Patrick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/TipusCanvi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/marxesAutomatic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/ClasseCotxe/marxesManual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/CompSim/Computer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/CompSim/MainComputer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/CompSim/Software.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/CompSim/operatingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Condicionals/Ej10Condicionals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Condicionals/Ej4Condicionals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Condicionals/Ej5Condicionals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Condicionals/Ej6condicionals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Condicionals/Ej9Condicionals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/DiesEntreDates/CalcularDiesEntreDates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/DiesEntreDates/DataXS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/DiesEntreDates/DiesEntreDates_Patrick_Rosselló.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/DiesEntreDates/TestDiesEntreDates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Endevinaelnombre/GuessGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Endevinaelnombre/GuessTheNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Files/FitxerDAM$mode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Files/FitxerDAM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Files/TestFitxer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/LaMevaEstanteria/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/LaMevaEstanteria/Rack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/LaMevaEstanteria/rackMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Menus/Menu1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Menus/Menu2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Menus/excsmenus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Menus/menu3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/NeveraTest/Nevera.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/NeveraTest/NoSuchItemException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/POO/Parking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/CorrecióParking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/ParkingTest_Patrick_Rossello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/Parking_Joshua_Mas$TipusPlacesParking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/Parking_Joshua_Mas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/Parking_Patrick_Rossello$TipusPlacesParking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/Parking_Patrick_Rossello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/Parkingv2_Patrick_Rossello$TipusPlacesParking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/Parkingv2_Patrick_Rossello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/Parkingv3_Patrick_Rossello$TipusPlacesParking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Parking/Parkingv3_Patrick_Rossello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/out/production/Java/Testing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/resources/arxius/florida.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/resources/arxius/mediterrania.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bingo/Machine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bingo/MainBingo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bingo/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bucles/ArrayListSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bucles/BubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bucles/Ej12Bucles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bucles/Ej13Bucles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bucles/Ej9bucles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Bucles/OrdenarMatrius.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/Cinema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/MainCinema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Cinema/Spectator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/ClasseCotxe/CotxeAbstracte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/ClasseCotxe/CotxeSegonaPart_Patrick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/ClasseCotxe/Cotxe_Patrick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/ClasseCotxe/EstatMotorCotxe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/ClasseCotxe/InterfaceCotxe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/ClasseCotxe/TestCotxeSegonaPart_Patrick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/ClasseCotxe/TestCotxe_Patrick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/ClasseCotxe/TipusCanvi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/CompSim/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/CompSim/MainComputer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/CompSim/Software.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/CompSim/operatingSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Condicionals/Ej10Condicionals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Condicionals/Ej4Condicionals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Condicionals/Ej5Condicionals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Condicionals/Ej6condicionals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Condicionals/Ej9Condicionals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/DiesEntreDates/CalcularDiesEntreDates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/DiesEntreDates/DataXS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/DiesEntreDates/DiesEntreDates_Patrick_Rosselló.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/DiesEntreDates/TestDiesEntreDates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Endevinaelnombre/GuessGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Endevinaelnombre/GuessTheNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Exceptions/UserAlreadySignedUpException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Exceptions/UserNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Files/FitxerDAM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Files/TestFitxer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Fishing/Pesca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/Rack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/LaMevaEstanteria/rackMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Menus/Menu1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Menus/Menu2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Menus/excsmenus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Menus/menu3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/NeveraTest/Nevera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/NeveraTest/NoSuchItemException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/POO/Parking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/POO/TestJUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/CorrecióParking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/ParkingTest_Patrick_Rossello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/Parking_Joshua_Mas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/Parking_Patrick_Rossello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/Parkingv2_Patrick_Rossello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Parking/Parkingv3_Patrick_Rossello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/Testing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-Dam/src/out/reports/eyo.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +173,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1nbwgHgNe9pglnm2S196oio19Xa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -66,13 +198,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bitaz\IdeaProjects\1-Dam\1-Dam" />
       <recent name="C:\Users\bitaz\IdeaProjects\1-Dam\1-Dam\src" />
       <recent name="C:\Users\bitaz\IdeaProjects\1-Dam\1-Dam\resources" />
       <recent name="C:\Users\bitaz\IdeaProjects\SideProjects" />
@@ -96,25 +229,17 @@
       </method>
     </configuration>
     <configuration name="Pesca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="adopt-openjdk-13" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Fishing.Pesca" />
-      <module name="1-Dam" />
+      <module name="Java" />
+      <option name="VM_PARAMETERS" value="--enable-preview" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Fishing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,6 +259,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.MainCinema" />
+      <item itemvalue="Application.Pesca" />
+      <item itemvalue="JUnit.NeveraTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Pesca" />
@@ -182,7 +312,12 @@
       <workItem from="1613394179347" duration="41000" />
       <workItem from="1613665581310" duration="44000" />
       <workItem from="1613737934629" duration="633000" />
-      <workItem from="1622303422293" duration="10847000" />
+      <workItem from="1622303422293" duration="10904000" />
+      <workItem from="1622392865160" duration="602000" />
+      <workItem from="1622542676970" duration="62000" />
+      <workItem from="1622542768019" duration="718000" />
+      <workItem from="1622543503640" duration="8891000" />
+      <workItem from="1622570141165" duration="3882000" />
     </task>
     <task id="LOCAL-00001" summary="YY">
       <created>1611786207209</created>
@@ -275,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613394207694</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Pesca">
+      <created>1622323931154</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1622323931154</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +436,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="YY" />
     <MESSAGE value="Cinema finished" />
     <MESSAGE value="Starting the bingo" />
@@ -303,7 +448,8 @@
     <MESSAGE value="Parking v3" />
     <MESSAGE value="Header Updated" />
     <MESSAGE value="Cinema for loop replaced for while" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cinema for loop replaced for while" />
+    <MESSAGE value="Pesca" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pesca" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
